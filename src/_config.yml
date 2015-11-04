@@ -1,0 +1,13 @@
+# Site settings
+title: "SAFX Demo Generator"
+destination: "../dist"
+exclude: [
+  assets/*.scss,
+  assets/**/*.scss,
+  assets/vendors/,
+  assets/components/**,
+  assets/pages
+]
+
+# Build settings
+markdown: kramdown
