@@ -6,7 +6,8 @@ var gulp = require('gulp'),
   minify = require('gulp-cssnano'),
   rename = require('gulp-rename'),
   spawn = require('child_process').spawn,
-  livereload = require('gulp-livereload');
+  livereload = require('gulp-livereload'),
+  sourcemaps = require('gulp-sourcemaps');
 
 var browsers = [
   autoprefixer({
@@ -17,17 +18,19 @@ var browsers = [
 var sassSettings = {
   outputStyle: 'compressed',
   precision: 10,
-  sourcemap: false,
+  sourcemap: true,
   errLogToConsole: true
 };
 
 // Sass compilation
 gulp.task('sass:dev', function() {
   return gulp.src('src/assets/*.scss', sassSettings)
-    .pipe(sass(sassSettings))
-    .pipe(postcss(browsers))
-    .pipe(minify())
-    .pipe(rename({ suffix: '.min' }))
+    .pipe(sourcemaps.init())
+      .pipe(sass(sassSettings))
+      .pipe(postcss(browsers))
+      .pipe(minify())
+      .pipe(rename({ suffix: '.min' }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('src/assets/css'))
 });
 
@@ -59,6 +62,12 @@ gulp.task('watch', function() {
 
   // Watch Sass
   gulp.watch(['src/assets/**/*.scss'], ['sass:dev']);
+  
+  // Watch Component HTML
+  gulp.watch(['src/assets/components/**/*.html'], ['components']);
+
+  // Watch Page HTML
+  gulp.watch(['src/assets/pages/*.html'], ['pages']);
 
   // LiveReload
   gulp.watch('dist/**/*.html').on('change', livereload.changed);

@@ -1,12 +1,18 @@
 # Site settings
 title: "SAFX Demo Generator"
 destination: "../dist"
+include: [
+  assets/vendors/bootstrap/javascripts/bootstrap.min.js
+]
 exclude: [
   assets/*.scss,
   assets/**/*.scss,
-  assets/vendors/,
   assets/components/**,
-  assets/pages
+  assets/pages,
+  assets/vendors/bootstrap/fonts,
+  assets/vendors/bootstrap/javascripts/bootstrap/,
+  assets/vendors/bootstrap/javascripts/bootstrap.js,
+  assets/vendors/bootstrap/javascripts/bootstrap-sprockets.js
 ]
 
 # Build settings

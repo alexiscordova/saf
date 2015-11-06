@@ -1,0 +1,55 @@
+// Variables
+
+// Colors
+$primary-10: #3cc8f5;
+$primary-20: #2959cc;
+$primary-30: #9f88dc;
+
+$secondary-10: #74e5d1;
+$secondary-20: #ff76d5;
+
+$tertiary-10: #9e44b6;
+$tertiary-20: #2b37ad;
+$tertiary-30: #4660ca;
+$tertiary-40: #2bb4c7;
+$tertiary-50: #1962ab;
+$tertiary-60: #487bb2;
+
+$brand-success: #28e5a3;
+$brand-danger: #fb467b;
+
+$grayscale-10: #02021f;
+$grayscale-20: #d5dfff;
+$grayscale-30: #ebeef4;
+$grayscale-40: #8a8a8e;
+
+
+// Typography
+$font-family-sans-serif: "New Rail Alphabet Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-family-light: "New Rail Alphabet Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-white: "New Rail Alphabet White", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-off-white: "New Rail Alphabet Off White", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-size-base: 16px;
+$font-size-small: 12px;
+
+$font-size-h1: 32px;
+$font-size-h2: 20px;
+$font-size-h3: 12px;
+
+
+// Navbar
+$navbar-default-bg: #15151d;
+
+
+// Navbar links
+$navbar-default-link-color: rgba($grayscale-20, .60);
+$navbar-default-link-hover-color: $grayscale-20;
+$navbar-default-link-active-color: $grayscale-20;
+$navbar-default-link-active-bg: transparent;
+
+
+// Badges
+$badge-color: rgba($grayscale-20, .60);
+$badge-bg: transparent;
