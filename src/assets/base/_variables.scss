@@ -45,7 +45,7 @@ $navbar-default-bg: #15151d;
 
 // Navbar links
 $navbar-default-link-color: rgba($grayscale-20, .60);
-$navbar-default-link-hover-color: $grayscale-20;
+$navbar-default-link-hover-color: #fff;
 $navbar-default-link-active-color: $grayscale-20;
 $navbar-default-link-active-bg: transparent;
 
@@ -53,3 +53,13 @@ $navbar-default-link-active-bg: transparent;
 // Badges
 $badge-color: rgba($grayscale-20, .60);
 $badge-bg: transparent;
+
+
+// Dropdowns
+//$dropdown-bg: #15151d;
+//$dropdown-border: 1px solid #545454;
+//$dropdown-fallback-border: $dropdown-border;
+//$dropdown-link-color: #9b9b9b;
+
+//$dropdown-link-hover-color: #fff;
+//$dropdown-link-hover-bg: rgba(#c9c9c9, .16);
