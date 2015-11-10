@@ -55,11 +55,21 @@ $badge-color: rgba($grayscale-20, .60);
 $badge-bg: transparent;
 
 
-// Dropdowns
-//$dropdown-bg: #15151d;
-//$dropdown-border: 1px solid #545454;
-//$dropdown-fallback-border: $dropdown-border;
-//$dropdown-link-color: #9b9b9b;
+// Buttons
+$btn-default-color: rgba(#15151d, .50);
+$btn-default-border: rgba(#15151d, .50);
 
-//$dropdown-link-hover-color: #fff;
-//$dropdown-link-hover-bg: rgba(#c9c9c9, .16);
+$btn-primary-color: $primary-20;
+$btn-primary-border: $primary-20;
+$btn-primary-bg: #fff;
+
+$btn-success-color: $brand-success;
+$btn-success-border: $brand-success;
+$btn-success-bg: #fff;
+
+$btn-danger-color: $brand-danger;
+$btn-danger-border: $brand-danger;
+$btn-danger-bg: #fff;
+
+$btn-border-radius-base: 40px;
+$btn-border-radius-small: 20px;

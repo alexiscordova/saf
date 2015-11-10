@@ -1,0 +1,57 @@
+// Buttons
+.btn {
+  min-width: 190px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  font-size: $font-size-small;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &:not([disabled]):hover {
+    color: #fff;
+  }
+
+  &[disabled],
+  &.disabled {
+    @include opacity(0.40);
+  }
+
+  &.btn-sm {
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
+
+  .icon {
+    position: relative;
+    z-index: 1;
+    top: -1px;
+  }
+}
+
+.btn-default {
+  &:hover {
+    border-color: $btn-default-color;
+    background-color: $btn-default-color;
+  }
+}
+
+.btn-primary {
+  &:hover {
+    border-color: $btn-primary-color;
+    background-color: $btn-primary-color;
+  }
+}
+
+.btn-success {
+  &:hover {
+    border-color: $brand-success;
+    background-color: $brand-success;
+  }
+}
+
+.btn-danger {
+  &:hover {
+    border-color: $brand-danger;
+    background-color: $brand-danger;
+  }
+}
