@@ -68,11 +68,11 @@ $badge-bg: transparent;
 
 
 // Buttons
-$btn-default-color: rgba($grayscale-10, .50);
-$btn-default-border: rgba($grayscale-10, .50);
+$btn-default-color: $grayscale-20;
+$btn-default-border: $grayscale-20;
 
-$btn-primary-color: $primary-20;
-$btn-primary-border: $primary-20;
+$btn-primary-color: $primary-30;
+$btn-primary-border: $primary-30;
 $btn-primary-bg: $true-white;
 
 $btn-success-color: $brand-success;
@@ -83,5 +83,5 @@ $btn-danger-color: $brand-danger;
 $btn-danger-border: $brand-danger;
 $btn-danger-bg: $true-white;
 
-$btn-border-radius-base: 40px;
-$btn-border-radius-small: 20px;
+$btn-border-radius-base: 100px;
+$btn-border-radius-small: $btn-border-radius-base;

@@ -1,57 +1,87 @@
 // Buttons
 .btn {
-  min-width: 190px;
-  padding-top: 16px;
-  padding-bottom: 15px;
+  padding: 14px 22px 13px;
+  font-family: $font-family-medium;
   font-size: $font-size-small;
   letter-spacing: 2px;
   text-transform: uppercase;
-
   &:not([disabled]):hover {
-    color: #fff;
+    color: $true-white;
   }
 
-  &[disabled],
-  &.disabled {
-    @include opacity(0.40);
+  &:active {
+    box-shadow: none;
   }
 
   &.btn-sm {
-    padding-top: 8px;
-    padding-bottom: 7px;
+    padding: 6px 16px;
   }
 
-  .icon {
-    position: relative;
-    z-index: 1;
-    top: -1px;
+  &.btn-link {
+    color: $grayscale-20;
   }
 }
 
-.btn-default {
+.btn-default:not([disabled]) {
   &:hover {
     border-color: $btn-default-color;
     background-color: $btn-default-color;
   }
+
+  &:active,
+  &:active:hover {
+    border-color: rgba($btn-default-color, 0.80);
+    background-color: rgba($btn-default-color, 0.80);
+  }
 }
 
-.btn-primary {
+.btn-primary:not([disabled]) {
   &:hover {
     border-color: $btn-primary-color;
     background-color: $btn-primary-color;
   }
+
+  &:active,
+  &:active:hover {
+    border-color: rgba($btn-primary-color, 0.80);
+    background-color: rgba($btn-primary-color, 0.80);
+  }
 }
 
-.btn-success {
+.btn-success:not([disabled]) {
   &:hover {
     border-color: $brand-success;
     background-color: $brand-success;
   }
+
+  &:active,
+  &:active:hover {
+    border-color: rgba($brand-success, 0.80);
+    background-color: rgba($brand-success, 0.80);
+  }
 }
 
-.btn-danger {
+.btn-danger:not([disabled]) {
   &:hover {
     border-color: $brand-danger;
     background-color: $brand-danger;
+  }
+
+  &:active,
+  &:active:hover {
+    border-color: rgba($brand-danger, 0.80);
+    background-color: rgba($brand-danger, 0.80);
+  }
+}
+
+.btn-link:not([disabled]) {
+  &:hover {
+    color: $grayscale-10;
+    text-decoration: none;
+  }
+
+  &:active,
+  &:active:hover {
+    color: $grayscale-20;
   }
 }
