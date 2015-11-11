@@ -43,14 +43,13 @@
       padding: 15px 12px;
       font-size: 18px;
       color: $navbar-default-link-color;
-      &:hover {
-        color: $navbar-default-link-hover-color;
-        text-decoration: none;
-      }
+      transition: color 0.15s linear;
+      &:hover,
       &:focus,
       &:active {
-        color: $primary-20;
+        color: $navbar-default-link-hover-color;
         text-decoration: none;
+        transition: color 0.15s linear;
       }
     }
   }
