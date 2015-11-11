@@ -1,27 +1,38 @@
 // Variables
 
 // Colors
-$primary-10: #3cc8f5;
-$primary-20: #2959cc;
-$primary-30: #9f88dc;
+// Primary Colors
+$primary-10: #9f88dc; // Blue 2
+$primary-20: #3cc8f5; // Blue 3
+$primary-30: #2959cc; // Purple
+$primary-40: #fb467b; // Red
+$primary-50: #28e5a3; // Green
 
-$secondary-10: #74e5d1;
-$secondary-20: #ff76d5;
+// Secondary/Fund Colors
+$secondary-10: #e75510; // RIC
+$secondary-20: #ff8d33; // OPCO
+$secondary-30: #f87d56; // ETF
+$secondary-40: #449161; // EYT
+$secondary-50: #84db12; // MF
+$secondary-60: #16e6ba; // BDC
+$secondary-70: #57d9df; // REF/RAF
+$secondary-80: #3a8ffc; // HF
+$secondary-90: #9a69ff; // PEF
+$secondary-100: #86879d; // CEF
 
-$tertiary-10: #9e44b6;
-$tertiary-20: #2b37ad;
-$tertiary-30: #4660ca;
-$tertiary-40: #2bb4c7;
-$tertiary-50: #1962ab;
-$tertiary-60: #487bb2;
+// Grayscale
+$grayscale-10: #15151d; // Black
+$grayscale-20: #aaabbb; // Gray 3
+$grayscale-30: #ebeef4; // Gray 2
+$grayscale-40: #f5f7fd; // Gray 1
+$grayscale-50: #d5dfff; // Blue 1
 
-$brand-success: #28e5a3;
-$brand-danger: #fb467b;
+$true-black: #000;
+$true-white: #fff;
 
-$grayscale-10: #02021f;
-$grayscale-20: #d5dfff;
-$grayscale-30: #ebeef4;
-$grayscale-40: #8a8a8e;
+// State Colors
+$brand-success: $primary-50;
+$brand-danger: $primary-40;
 
 
 // Typography
@@ -40,36 +51,36 @@ $font-size-h3: 12px;
 
 
 // Navbar
-$navbar-default-bg: #15151d;
+$navbar-default-bg: $grayscale-10;
 
 
 // Navbar links
-$navbar-default-link-color: rgba($grayscale-20, .60);
-$navbar-default-link-hover-color: #fff;
-$navbar-default-link-active-color: $grayscale-20;
+$navbar-default-link-color: rgba($grayscale-50, .60);
+$navbar-default-link-hover-color: $grayscale-50;
+$navbar-default-link-active-color: $true-white;
 $navbar-default-link-active-bg: transparent;
 
 
 // Badges
-$badge-color: rgba($grayscale-20, .60);
+$badge-color: rgba($grayscale-50, .60);
 $badge-bg: transparent;
 
 
 // Buttons
-$btn-default-color: rgba(#15151d, .50);
-$btn-default-border: rgba(#15151d, .50);
+$btn-default-color: rgba($grayscale-10, .50);
+$btn-default-border: rgba($grayscale-10, .50);
 
 $btn-primary-color: $primary-20;
 $btn-primary-border: $primary-20;
-$btn-primary-bg: #fff;
+$btn-primary-bg: $true-white;
 
 $btn-success-color: $brand-success;
 $btn-success-border: $brand-success;
-$btn-success-bg: #fff;
+$btn-success-bg: $true-white;
 
 $btn-danger-color: $brand-danger;
 $btn-danger-border: $brand-danger;
-$btn-danger-bg: #fff;
+$btn-danger-bg: $true-white;
 
 $btn-border-radius-base: 40px;
 $btn-border-radius-small: 20px;

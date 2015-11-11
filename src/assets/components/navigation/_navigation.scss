@@ -3,7 +3,7 @@
 // Navbar
 .navbar {
   margin: -30px -30px 30px;
-  font-family: $font-family-off-white;
+  font-family: $font-family-white;
   background-color: $navbar-default-bg;
 
   .navbar-header {
@@ -43,10 +43,13 @@
       padding: 15px 12px;
       font-size: 18px;
       color: $navbar-default-link-color;
-      &:hover,
-      &:active,
-      &:focus {
+      &:hover {
         color: $navbar-default-link-hover-color;
+        text-decoration: none;
+      }
+      &:focus,
+      &:active {
+        color: $primary-20;
         text-decoration: none;
       }
     }
@@ -56,7 +59,8 @@
 
 // Subnavigation
 .global-nav + .subnav {
-  border-top: 1px solid rgba($grayscale-20, .25);
+  font-family: $font-family-base;
+  border-top: 1px solid rgba($grayscale-50, .25);
 
   .navbar-header {
     padding-top: 5px;
@@ -66,14 +70,16 @@
   .navbar-brand {
     padding-right: 20px;
     font-size: 24px;
+    font-family: $font-family-white;
     color: $navbar-default-link-color;
-    border-right: 1px solid rgba($grayscale-20, .25);
+    border-right: 1px solid rgba($grayscale-50, .25);
   }
 
   .nav-item > a {
     margin: 0 20px;
     padding: 15px 0;
     font-size: $font-size-small;
+    letter-spacing: 2px;
     text-transform: uppercase;
   }
 
@@ -87,7 +93,7 @@
       left: 0;
       width: 100%;
       height: 4px;
-      background-color: $primary-10;
+      background-color: $primary-20;
       content: '';
     }
   }
