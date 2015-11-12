@@ -2,9 +2,9 @@
 
 // Colors
 // Primary Colors
-$primary-10: #9f88dc; // Blue 2
-$primary-20: #3cc8f5; // Blue 3
-$primary-30: #2959cc; // Purple
+$primary-10: #9f88dc; // Purple
+$primary-20: #3cc8f5; // Blue 2
+$primary-30: #2959cc; // Blue 3
 $primary-40: #fb467b; // Red
 $primary-50: #28e5a3; // Green
 
@@ -56,15 +56,15 @@ $navbar-default-bg: $grayscale-10;
 
 
 // Navbar links
-$navbar-default-link-color: rgba($grayscale-50, .60);
+$navbar-default-link-color: rgba($grayscale-50, 0.60);
 $navbar-default-link-hover-color: $grayscale-50;
 $navbar-default-link-active-color: $true-white;
 $navbar-default-link-active-bg: transparent;
 
 
 // Badges
-$badge-color: rgba($grayscale-50, .60);
-$badge-bg: transparent;
+$badge-color: $true-white;
+$badge-bg: rgba($primary-10, 0.90);
 
 
 // Buttons
@@ -85,3 +85,13 @@ $btn-danger-bg: $true-white;
 
 $btn-border-radius-base: 100px;
 $btn-border-radius-small: $btn-border-radius-base;
+
+
+// Form Fields
+$input-bg: $grayscale-30;
+$input-bg-disabled: $true-white;
+$input-color: $grayscale-10; // fpo
+$input-border: transparent;
+$input-border-radius: 0;
+
+$input-group-addon-bg: $grayscale-30;

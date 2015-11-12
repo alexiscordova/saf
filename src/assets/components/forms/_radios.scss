@@ -1,0 +1,60 @@
+// RADIO BUTTONS
+//-------------------
+
+.radio {
+  margin: 0;
+  padding: 0;
+
+  & + & {
+    margin-top: 20px;
+  }
+
+  &.disabled {
+    @include opacity(0.40);
+  }
+
+  [type="radio"] {
+    display: none;
+  }
+
+  [type="radio"] + label {
+    position: relative;
+    z-index: 1;
+    padding-left: 30px;
+    color: rgba($grayscale-10, 0.50);
+    font-size: $font-size-base;
+    text-transform: none;
+    &:before {
+      position: absolute;
+      z-index: 1;
+      top: 2px;
+      margin-left: -30px;
+      width: 18px;
+      height: 18px;
+      border: 1px solid $grayscale-20;
+      border-radius: 50%;
+      content: '';
+    }
+  }
+
+  [type="radio"]:checked + label {
+    color: $grayscale-10;
+    &:before {
+      background-color: $primary-20;
+    }
+
+    &:after {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 9px;
+      margin-top: -5px;
+      margin-left: -5px;
+      width: 10px;
+      height: 10px;
+      background-color: $primary-30;
+      border-radius: 50%;
+      content: '';
+    }
+  }
+}
