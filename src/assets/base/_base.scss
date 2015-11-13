@@ -1,8 +1,12 @@
 // Base
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   padding: 30px;
-  background-color: $grayscale-30;
   overflow-x: hidden;
 }
 
@@ -13,8 +17,24 @@ body {
   width: 100%;
 }
 
+// Links
+a:hover {
+  cursor: pointer;
+}
+
 // FPO
 .card {
   padding: 30px;
   background-color: $true-white;
+
+  &.card-full-height {
+    max-height: 90%;
+    height: 100%;
+  }
+}
+
+[role="main"] {
+  min-height: 100%;
+  height: 100%;
+  margin-bottom: -300px;
 }

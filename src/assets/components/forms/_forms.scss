@@ -16,6 +16,7 @@ label {
   font-size: 20px;
   color: $grayscale-10;
   box-shadow: none;
+  cursor: text;
   &::placeholder {
     color: $grayscale-20;
     font-style: italic;
@@ -52,8 +53,9 @@ textarea.form-control {
 
 // Descriptive text
 .description {
+  display: inline-block;
   margin-top: 10px;
-  color: $grayscale-10;
+  font-size: $font-size-small;
   line-height: (14px/$font-size-small);
 }
 
