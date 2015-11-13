@@ -34,3 +34,12 @@ p {
 small {
   display: inline-block;
 }
+
+// Utility Classes
+.text-secondary {
+  color: rgba($grayscale-10, 0.50);
+}
+
+.text-tertiary {
+  color: $grayscale-20;
+}
