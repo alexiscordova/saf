@@ -10,15 +10,18 @@ h3 {
 
 h1 {
   font-family: $font-family-off-white;
+  font-weight: $font-weight-off-white;
 }
 
 h2 {
   font-family: $font-family-white;
+  font-weight: $font-weight-white;
   line-height: 1.3;
 }
 
 h3 {
   font-family: $font-family-medium;
+  font-weight: $font-weight-medium;
   text-transform: uppercase;
   letter-spacing: 2px;
 }

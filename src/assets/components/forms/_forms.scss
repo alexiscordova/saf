@@ -3,10 +3,12 @@
 
 // Basic input
 label {
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   font-family: $font-family-medium;
   font-size: $font-size-small;
+  font-weight: normal;
   color: rgba($grayscale-10, 0.50);
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
@@ -18,7 +20,7 @@ label {
   box-shadow: none;
   cursor: text;
   &::placeholder {
-    color: $grayscale-20;
+    color: rgba($grayscale-10, 0.50);
     font-style: italic;
   }
 }
@@ -56,6 +58,7 @@ textarea.form-control {
   display: inline-block;
   margin-top: 10px;
   font-size: $font-size-small;
+  color: rgba($grayscale-10, 0.50);
   line-height: (14px/$font-size-small);
 }
 
