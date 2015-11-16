@@ -17,6 +17,7 @@
     display: none;
   }
 
+  // Non-selected label
   [type="radio"] + label {
     position: relative;
     z-index: 1;
@@ -27,6 +28,8 @@
     font-size: $font-size-base;
     letter-spacing: normal;
     text-transform: none;
+
+    // Radio bounds
     &:before {
       position: absolute;
       z-index: 1;
@@ -40,12 +43,23 @@
     }
   }
 
+  // Hover state
+  &:not(.disabled):hover [type="radio"] + label {
+    color: $grayscale-10;
+    &:before {
+      border-color: $primary-20;
+    }
+  }
+
+  // Selected label
   [type="radio"]:checked + label {
     color: $grayscale-10;
     &:before {
+      border-color: transparent;
       background-color: $primary-20;
     }
 
+    // Selected mark
     &:after {
       position: absolute;
       z-index: 1;

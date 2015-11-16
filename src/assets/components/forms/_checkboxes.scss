@@ -17,6 +17,7 @@
     display: none;
   }
 
+  // Non-checked label
   [type="checkbox"] + label {
     position: relative;
     z-index: 1;
@@ -42,9 +43,19 @@
     }
   }
 
+  // Hover state
+  &:not(.disabled):hover [type="checkbox"] + label {
+    color: $grayscale-10;
+    &:before {
+      border-color: $primary-20;
+    }
+  }
+
+  // Checked Label
   [type="checkbox"]:checked + label {
     color: $grayscale-10;
     &:before {
+      border-color: transparent;
       background-color: $primary-20;
     }
 
