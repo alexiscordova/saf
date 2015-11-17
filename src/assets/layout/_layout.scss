@@ -9,13 +9,8 @@
 
 // Make grid columns and card max height (minus footer and header) of the window
 .max-height {
-  max-height: calc(100% - (87px + 72px)); // footer and header height
-  height: 100%;
-
-  .row,
-  [class*="col-xs-"],
   .card {
-    height: 100%;
+    min-height: calc(100vh - (72px + 87px + 60px)); // footer, header, padding
   }
 }
 
