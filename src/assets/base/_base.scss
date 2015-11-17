@@ -2,7 +2,7 @@
 
 html,
 body {
-  height: 100%; // fpo
+  height: 100%;
 }
 
 body {
@@ -10,25 +10,8 @@ body {
   overflow-x: hidden;
 }
 
-// Non-responsive Bootstrap overrides
-.container {
-  min-width: 800px;
-  max-width: 1200px;
-  width: 100%;
-}
 
 // Links
 a:hover {
   cursor: pointer;
-}
-
-// FPO
-.card {
-  padding: 30px;
-  background-color: $true-white;
-
-  &.card-full-height {
-    max-height: 90%;
-    height: 100%;
-  }
 }

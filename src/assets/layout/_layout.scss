@@ -1,14 +1,27 @@
 // Layout
 
-body {
-  margin-bottom: 100px;
-}
 // Main content
-[role="main"] {
+// Add vertical spacing between rows, but only decendents of the main div
+// This allows for nested rows
+[role="main"] > .row + .row {
+  margin-top: 30px;
+}
 
-  // Add vertical spacing between rows, but only decendents of the main div
-  // This allows for nested rows
-  & > .row + .row {
-    margin-top: 30px;
+// Make grid columns and card max height (minus footer and padding) of the window
+.max-height {
+  max-height: calc(100% - 140px - 30px); // footer height and desired padding
+  height: 100%;
+
+  .row,
+  [class*="col-xs-"],
+  .card {
+    height: 100%;
   }
+}
+
+// Non-responsive Bootstrap overrides
+.container {
+  min-width: 800px;
+  max-width: 1200px;
+  width: 100%;
 }

@@ -19,9 +19,14 @@ label {
   color: $grayscale-10;
   box-shadow: none;
   cursor: text;
+  text-overflow: ellipsis;
   &::placeholder {
     color: rgba($grayscale-10, 0.50);
     font-style: italic;
+  }
+
+  &[disabled] {
+    padding-left: 0;
   }
 }
 
