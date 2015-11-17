@@ -1,0 +1,14 @@
+// Layout
+
+body {
+  margin-bottom: 100px;
+}
+// Main content
+[role="main"] {
+
+  // Add vertical spacing between rows, but only decendents of the main div
+  // This allows for nested rows
+  & > .row + .row {
+    margin-top: 30px;
+  }
+}
