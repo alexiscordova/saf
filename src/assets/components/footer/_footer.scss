@@ -1,0 +1,51 @@
+// Footer
+footer {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-right: -30px;
+  margin-left: -30px;
+  height: 72px;
+  padding-top: 24px;
+  padding-bottom: 22px;
+  color: rgba($grayscale-50, 0.60);
+  font-weight: $font-weight-light;
+  background-color: $grayscale-10;
+
+  .col-xs-6 + .col-xs-6 {
+    border-left: 1px solid rgba($grayscale-50, 0.25);
+  }
+
+  .col-xs-6:first-child {
+    padding-right: 80px;
+  }
+
+  .col-xs-6:last-child {
+    padding-left: 80px;
+  }
+
+  ul {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: $font-size-small;
+
+    li:not(:first-child) {
+      margin-left: 40px;
+    }
+  }
+
+  a {
+    color: rgba($grayscale-50, 0.60);
+    letter-spacing: 1.43px;
+    transition: color 0.15s linear;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $navbar-default-link-hover-color;
+        text-decoration: none;
+        transition: color 0.15s linear;
+      }
+  }
+}
