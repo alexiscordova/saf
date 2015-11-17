@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SAF - Log In</title>
+  <link rel="stylesheet" href="//f.fontdeck.com/s/css/hTVw3hBVKroUSpZgLuO50Q6Vxqo/DOMAIN_NAME/61355.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/css/safx.min.css" type="text/css">
+  <script type="text/javascript" src="/assets/vendors/jquery/jquery-2.1.4.js"></script>
+</head>
+<body>
+
+<style type="text/css">
+  form {
+    margin-bottom: 30px;
+  }
+
+  .circle {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 150px;
+    height: 150px;
+    background-color: #2959cc;
+    border-radius: 50%;
+  }
+
+  .circle:before {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    margin-top: -57px;
+    margin-left: -57px;
+    color: #fff;
+    font-size: 80px;
+    font-family: "New Rail Alphabet Off White", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    content: 'MT';
+  }
+
+  .text-light {
+    color: rgba(21, 21, 29, 0.3);
+  }
+
+</style>
+
+
+<nav class="navbar">
+  <div class="global-nav">
+    <div class="container center-block clearfix">
+
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/img/saf_whitelogo.svg" class="logo" />
+        </a>
+      </div>
+
+      <!-- optional main navigation -->
+      <ul class="nav navbar-nav pull-right">
+        <li class="nav-item nav-item-funds">
+          <a href="#">
+            <span class="icon">X</span>
+            Funds
+          </a>
+        </li>
+        <li class="nav-item nav-item-orders">
+          <a href="#">
+            <span class="icon">X</span>
+            Orders
+          </a>
+        </li>
+        <li class="nav-item nav-item-monitor">
+          <a href="#">
+            <span class="icon">X</span>
+            Monitor
+          </a>
+        </li>
+        <li class="nav-item nav-item-queued">
+          <a href="#">
+            <span class="icon">X</span>
+            Queued
+            <span class="badge">99</span>
+          </a>
+        </li>
+        <li class="nav-item nav-item-help">
+          <a href="#">
+            <span class="icon">X</span>
+            Help
+          </a>
+        </li>
+        <li class="dropdown nav-item nav-item-account">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="icon">X</span>
+            Account <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="account.html">Personal</a></li>
+            <li><a href="#">Firm</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- end main navigation -->
+
+  <!-- optional subnav -->
+  <div class="subnav">
+    <div class="container center-block clearfix">
+      <div class="navbar-header">
+        <span class="navbar-brand">Personal</span>
+      </div>
+      <ul class="nav navbar-nav pull-left">
+        <li class="nav-item active"><a href="account.html">Profile</a></li>
+        <li class="nav-item"><a href="settings.html">Settings</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- end subnav -->
+
+</nav>
+
+<div role="main" class="container center-block">
+  <div class="row">
+    <div class="col-xs-4">
+      <div class="card">
+        <h1>My Profile</h1>
+        <div class="avatar">
+          <span class="circle center-block"></span>
+        </div>
+        <h1 class="text-center">Mario Totino</h1>
+        <h2 class="text-center text-light">Team Manager</h2>
+
+        <div class="profile">
+          <form>
+            <div class="form-group">
+              <label for="text-field-disabled">Email</label>
+              <input type="text" id="text-field-disabled" class="form-control" value="m.totino@bhcapitalinvestments.com" disabled />
+            </div>
+
+            <div class="form-group">
+              <label for="text-field">Title</label>
+              <input type="text" id="text-field" class="form-control" placeholder="Title" />
+            </div>
+
+            <div class="form-group">
+              <label for="text-field">Role at Firm</label>
+              <input type="text" id="text-field" class="form-control" placeholder="Role" />
+            </div>
+
+            <div class="form-group">
+              <label for="text-field">Number</label>
+              <input type="text" id="text-field" class="form-control" placeholder="212-555-5555" />
+            </div>
+
+          </form>
+
+          <div class="text-center">
+            <a href="#" role="button" class="btn btn-success">Save Changes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-8">
+      <div class="card">
+        <h1>Preferences</h1>
+        <h2>How long have you been investing in alternatives?</h2>
+        <form>
+          <div class="radio">
+            <input type="radio" name="alternatives" id="alternatives1" value="option1">
+            <label for="alternatives1">New to investing</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="alternatives" id="alternatives2" value="option2">
+            <label for="alternatives2">Less than 5 years</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="alternatives" id="alternatives3" value="option3">
+            <label for="alternatives3">5-15 Years</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="alternatives" id="alternatives4" value="option4">
+            <label for="alternatives4">15+ Years</label>
+          </div>
+        </form>
+
+        <h2>What are your investment goals?</h2>
+        <form>
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox-1" />
+            <label for="checkbox-1">Capital Preservation</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox-2" />
+            <label for="checkbox-2">Growth</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox-3" />
+            <label for="checkbox-3">Speculation</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox-4" />
+            <label for="checkbox-4">Income</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox-5" />
+            <label for="checkbox-5">Tax Benefits</label>
+          </div>
+        </form>
+
+        <p class="text-light">What parts of the private funds market interest you the most?</p>
+        <div class="row">
+          <div class="col-xs-6">
+            <h2>Hedge Funds</h2>
+            <form>
+              <div class="checkbox">
+                <input type="checkbox" id="hedge-fund-1" />
+                <label for="hedge-fund-1">Long-Short Equity</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="hedge-fund-2" />
+                <label for="hedge-fund-2">Event Driven</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="hedge-fund-3" />
+                <label for="hedge-fund-3">Macroeconomic</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="hedge-fund-4" />
+                <label for="hedge-fund-4">Quantitative</label>
+              </div>
+            </form>
+          </div>
+          <div class="col-xs-6">
+            <h2>Private Equity Funds</h2>
+            <form>
+              <div class="checkbox">
+                <input type="checkbox" id="private-equity-fund-1" />
+                <label for="private-equity-fund-1">Long-Short Equity</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="private-equity-fund-2" />
+                <label for="private-equity-fund-2">Event Driven</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="private-equity-fund-3" />
+                <label for="private-equity-fund-3">Macroeconomic</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="private-equity-fund-4" />
+                <label for="private-equity-fund-4">Quantitative</label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="/assets/vendors/bootstrap/javascripts/bootstrap.min.js"></script>
+
+</body>
+</html>

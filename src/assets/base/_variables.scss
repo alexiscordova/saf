@@ -1,0 +1,110 @@
+// Variables
+
+// Colors
+// Primary Colors
+$primary-10: #9f88dc; // Purple
+$primary-20: #3cc8f5; // Blue 2
+$primary-30: #2959cc; // Blue 3
+$primary-40: #fb467b; // Red
+$primary-50: #28e5a3; // Green
+
+// Secondary/Fund Colors
+$secondary-10: #e75510; // RIC
+$secondary-20: #ff8d33; // OPCO
+$secondary-30: #f87d56; // ETF
+$secondary-40: #449161; // EYT
+$secondary-50: #84db12; // MF
+$secondary-60: #16e6ba; // BDC
+$secondary-70: #57d9df; // REF/RAF
+$secondary-80: #3a8ffc; // HF
+$secondary-90: #9a69ff; // PEF
+$secondary-100: #86879d; // CEF
+
+// Grayscale
+$grayscale-10: #15151d; // Black
+$grayscale-20: #aaabbb; // Gray 3
+$grayscale-30: #ebeef4; // Gray 2
+$grayscale-40: #f5f7fd; // Gray 1
+$grayscale-50: #d5dfff; // Blue 1
+
+$true-black: #000;
+$true-white: #fff;
+
+// State Colors
+$brand-success: $primary-50;
+$brand-danger: $primary-40;
+
+// Scaffolding
+$body-bg: $grayscale-30;
+$text-color: $grayscale-10;
+$link-color: $primary-10;
+$link-hover-color: $primary-10;
+
+$state-success-text: $primary-50;
+$state-danger-text: $primary-40;
+$state-info-text: $primary-30;
+
+// Typography
+$font-family-sans-serif: "New Rail Alphabet Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-medium: "New Rail Alphabet Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-light: "New Rail Alphabet Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-white: "New Rail Alphabet White", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-off-white: "New Rail Alphabet Off White", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-weight-medium: 400;
+$font-weight-light: 200;
+$font-weight-white: 100;
+$font-weight-off-white: 100;
+
+$font-size-h1: 32px;
+$font-size-h2: 20px;
+$font-size-h3: 12px;
+
+$font-size-base: 16px;
+$font-size-small: 12px;
+
+
+// Navbar
+$navbar-default-bg: $grayscale-10;
+
+
+// Navbar links
+$navbar-default-link-color: rgba($grayscale-50, 0.60);
+$navbar-default-link-hover-color: $grayscale-50;
+$navbar-default-link-active-color: $true-white;
+$navbar-default-link-active-bg: transparent;
+
+
+// Badges
+$badge-color: $true-white;
+$badge-bg: rgba($primary-10, 0.90);
+
+
+// Buttons
+$btn-default-color: $grayscale-20;
+$btn-default-border: $grayscale-20;
+
+$btn-primary-color: $primary-30;
+$btn-primary-border: $primary-30;
+$btn-primary-bg: $true-white;
+
+$btn-success-color: $brand-success;
+$btn-success-border: $brand-success;
+$btn-success-bg: $true-white;
+
+$btn-danger-color: $brand-danger;
+$btn-danger-border: $brand-danger;
+$btn-danger-bg: $true-white;
+
+$btn-border-radius-base: 100px;
+$btn-border-radius-small: $btn-border-radius-base;
+
+
+// Form Fields
+$input-bg: $grayscale-30;
+$input-bg-disabled: $true-white;
+$input-color: $grayscale-10; // fpo
+$input-border: transparent;
+$input-border-radius: 0;
+
+$input-group-addon-bg: $grayscale-30;

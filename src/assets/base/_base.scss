@@ -1,0 +1,40 @@
+// Base
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding: 30px;
+  overflow-x: hidden;
+}
+
+// Non-responsive Bootstrap overrides
+.container {
+  min-width: 800px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+// Links
+a:hover {
+  cursor: pointer;
+}
+
+// FPO
+.card {
+  padding: 30px;
+  background-color: $true-white;
+
+  &.card-full-height {
+    max-height: 90%;
+    height: 100%;
+  }
+}
+
+[role="main"] {
+  min-height: 100%;
+  height: 100%;
+  margin-bottom: -300px;
+}

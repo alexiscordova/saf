@@ -1,0 +1,74 @@
+// CHECKBOXES
+//-------------------
+
+.checkbox {
+  margin: 0;
+  padding: 0;
+
+  & + & {
+    margin-top: 20px;
+  }
+
+  &.disabled {
+    @include opacity (0.40);
+  }
+
+  [type="checkbox"] {
+    display: none;
+  }
+
+  // Non-checked label
+  [type="checkbox"] + label {
+    position: relative;
+    z-index: 1;
+    padding-left: 30px;
+    color: rgba($grayscale-10, 0.50);
+    font-family: $font-family-light;
+    font-weight: $font-weight-light;
+    font-size: $font-size-base;
+    letter-spacing: normal;
+    text-transform: none;
+
+    // Checkbox bounds
+    &:before {
+      position: absolute;
+      z-index: 1;
+      top: 2px;
+      margin-left: -30px;
+      width: 18px;
+      height: 18px;
+      border: 1px solid $grayscale-20;
+      border-radius: 2px;
+      content: '';
+    }
+  }
+
+  // Hover state
+  &:not(.disabled):hover [type="checkbox"] + label {
+    color: $grayscale-10;
+    &:before {
+      border-color: $primary-20;
+    }
+  }
+
+  // Checked Label
+  [type="checkbox"]:checked + label {
+    color: $grayscale-10;
+    &:before {
+      border-color: transparent;
+      background-color: $primary-20;
+    }
+
+    // Checkbox checkmark
+    &:after {
+      position: absolute;
+      z-index: 1;
+      top: 1px; // fpo. need icon
+      left: 4px; // fpo. need icon
+      width: 18px;
+      height: 18px;
+      color: $primary-30;
+      content: 'X'; // fpo. need icon
+    }
+  }
+}

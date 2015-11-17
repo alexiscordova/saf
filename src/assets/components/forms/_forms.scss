@@ -1,0 +1,122 @@
+// FORM FIELDS
+//-------------------
+
+// Basic input
+label {
+  margin-bottom: 2px;
+  font-family: $font-family-medium;
+  font-size: $font-size-small;
+  font-weight: normal;
+  color: rgba($grayscale-10, 0.50);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.form-control {
+  height: 48px;
+  font-family: $font-family-white;
+  font-size: 20px;
+  color: $grayscale-10;
+  box-shadow: none;
+  cursor: text;
+  &::placeholder {
+    color: rgba($grayscale-10, 0.50);
+    font-style: italic;
+  }
+}
+
+textarea.form-control {
+  min-height: 80px;
+  resize: none;
+}
+
+// Search input
+.form-control[type="search"] {
+  padding-left: 40px;
+  border-radius: 100px;
+}
+
+// Search icon inside of input
+.search-icon {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 20px; // fpo. waiting on icon
+  margin-top: -11px; // fpo. waiting on icon
+}
+
+// Form add-ons (field with symbol)
+.input-group-addon {
+  min-width: 50px;
+  padding-right: 19px;
+  padding-left: 19px;
+  border-radius: 0;
+}
+
+// Descriptive text
+.description {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: $font-size-small;
+  color: rgba($grayscale-10, 0.50);
+  line-height: (14px/$font-size-small);
+}
+
+// Form wrapper
+.form-wrapper {
+  position: relative;
+  z-index: 1;
+
+  > .form-control:not([type="search"]) {
+    padding-right: 60px;
+  }
+
+  .form-trigger {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 12px;
+    margin-top: -8px;
+    color: $primary-10;
+    font-size: $font-size-small;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+// Add-on left side
+.input-group-addon:first-child {
+  border-right: 1px solid rgba($grayscale-10, 0.20);
+}
+
+// Add-on right side
+.input-group-addon:last-child {
+  border-left: 1px solid rgba($grayscale-10, 0.20);
+}
+
+// Error states
+.has-error .form-control {
+  border-color: $brand-danger;
+  background-color: rgba($brand-danger, 0.05);
+}
+
+.error-msg {
+  position: relative;
+  z-index: 1;
+  top: 4px;
+  float: right;
+  font-size: $font-size-small;
+  color: $brand-danger;
+}
+
+
+// Inline inputs
+.form-inline {
+  .form-control {
+    display: block;
+  }
+
+  .form-group + .form-group {
+    margin-left: 60px;
+  }
+}

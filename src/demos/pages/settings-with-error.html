@@ -1,0 +1,252 @@
+---
+title: "SAF - Log In"
+layout: default
+---
+<style type="text/css">
+  form {
+    margin-bottom: 30px;
+  }
+
+  .text-block {
+    display: block;
+    margin-top: 15px;
+  }
+
+  [role=main] > .row + .row {
+    margin-top: 30px;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 15px;
+  }
+
+  p {
+    margin-bottom: 5px;
+  }
+</style>
+
+
+<nav class="navbar">
+  <div class="global-nav">
+    <div class="container center-block clearfix">
+
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/img/saf_whitelogo.svg" class="logo" />
+        </a>
+      </div>
+
+      <!-- optional main navigation -->
+      <ul class="nav navbar-nav pull-right">
+        <li class="nav-item nav-item-funds">
+          <a href="#">
+            <span class="icon">X</span>
+            Funds
+          </a>
+        </li>
+        <li class="nav-item nav-item-orders">
+          <a href="#">
+            <span class="icon">X</span>
+            Orders
+          </a>
+        </li>
+        <li class="nav-item nav-item-monitor">
+          <a href="#">
+            <span class="icon">X</span>
+            Monitor
+          </a>
+        </li>
+        <li class="nav-item nav-item-queued">
+          <a href="#">
+            <span class="icon">X</span>
+            Queued
+            <span class="badge">99</span>
+          </a>
+        </li>
+        <li class="nav-item nav-item-help">
+          <a href="#">
+            <span class="icon">X</span>
+            Help
+          </a>
+        </li>
+        <li class="dropdown nav-item nav-item-account">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="icon">X</span>
+            Account <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="account.html">Personal</a></li>
+            <li><a href="#">Firm</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- end main navigation -->
+
+  <!-- optional subnav -->
+  <div class="subnav">
+    <div class="container center-block clearfix">
+      <div class="navbar-header">
+        <span class="navbar-brand">Personal</span>
+      </div>
+      <ul class="nav navbar-nav pull-left">
+        <li class="nav-item"><a href="account.html">Profile</a></li>
+        <li class="nav-item active"><a href="settings.html">Settings</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- end subnav -->
+
+</nav>
+
+<div role="main" class="container center-block">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="card">
+        <h1>Reset Password</h1>
+        <div class="row">
+
+          <div class="col-xs-4">
+            <form>
+              <div class="form-group">
+                <label for="text-field-disabled">Email</label>
+                <input type="text" id="text-field-disabled" class="form-control" value="m.totino@bhcapitalinvestment.com" disabled />
+              </div>
+  
+              <div class="form-group has-error">
+                <span class="error-msg">Incorrect password.</span>
+                <label for="password">Current Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Password" />
+                <small class="description">Forgot your password? Click here to reset it.</small>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-xs-4">
+            <form>
+              <div class="form-group">
+                <label for="password">New Password</label>
+                <input type="password" id="new-password" class="form-control" placeholder="New Password" />
+              </div>
+
+              <div class="form-group has-error">
+                <span class="error-msg">Password does not match.</span>
+                <label for="password">Confirm Password</label>
+                <input type="password" id="confirm-password" class="form-control" placeholder="New Password" />
+              </div>
+            </form>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="description">
+              <p>Password must contain:</p>
+              <ul>
+                <li>One uppercase character</li>
+                <li>One lowercase character</li>
+                <li>At least seven characters</li>
+                <li>One number</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="text-center">
+              <a href="settings.html" role="button" class="btn btn-primary">Change Password</a>
+              <small class="text-block">Last Updated Jul 31, 2014</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="card">
+        <div class="row">
+          <div class="col-xs-6">
+            <h1>Two-Step Verify</h1>
+            <p>Two-step verification via SMS is an extra security feature to help keep your account safe when logging in from an unrecognized device or computer. If you turn two-step verification on, SAF will send an SMS to the phone number you provide with an additional security code.</p>
+
+            <div class="row">
+              <div class="col-xs-4">
+                <form>
+                  <div class="checkbox">
+                    <input type="checkbox" id="checkbox-1" />
+                    <label for="checkbox-1">Two-Factor Verification</label>
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-xs-7">
+                <form>
+                  <div class="form-group">
+                    <label for="text-field">Phone Number</label>
+                    <input type="text" id="text-field" class="form-control" placeholder="000-000-0000" />
+                  </div>
+                </form>
+                <a href="#" role="button" class="btn btn-sm btn-primary">Send Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-offset-6"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="card">
+      <h1>Notifications</h1>
+      <div class="row">
+        <div class="col-xs-6">
+          <h2>Platform Activity</h2>
+          <p>Send me an email when:</p>
+          <form>
+            <div class="checkbox">
+              <input type="checkbox" id="activity-1" />
+              <label for="activity-1">A fund manager sends me a message</label>
+            </div>
+
+            <div class="checkbox">
+              <input type="checkbox" id="activity-2" />
+              <label for="activity-2">There is a system notification (outstanding tasks, documents needed, etc)</label>
+            </div>
+
+            <div class="checkbox">
+              <input type="checkbox" id="activity-3" />
+              <label for="activity-3">Someone watches my firm</label>
+            </div>
+
+          </form>
+        </div>
+        <div class="col-xs-6">
+          <h2>Interests</h2>
+          <p>Send me an email when:</p>
+          <form>
+            <div class="checkbox">
+              <input type="checkbox" id="activity-4" />
+              <label for="activity-4">A new fund I may be interested in is added to SAF</label>
+            </div>
+
+            <div class="checkbox">
+              <input type="checkbox" id="activity-5" />
+              <label for="activity-5">SAF Newsletter</label>
+            </div>
+
+            <div class="checkbox">
+              <input type="checkbox" id="activity-6" />
+              <label for="activity-6">A manager I am watching is in town</label>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
