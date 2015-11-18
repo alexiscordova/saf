@@ -1,4 +1,6 @@
 // Buttons
+
+// Base button
 .btn {
   padding: 14px 22px 13px;
   min-width: 190px;
@@ -6,30 +8,23 @@
   font-size: $font-size-small;
   letter-spacing: 2px;
   text-transform: uppercase;
+  background-color: $true-white;
+
   &:not([disabled]):hover {
     color: $true-white;
   }
 
-  &:active {
-    box-shadow: none;
-  }
-
-  &:hover,
-  &:active,
   &:focus {
-    text-decoration: none;
+    background-color: $true-white;
   }
 
-
-  &.btn-sm {
-    padding: 6px 16px;
-  }
-
-  &.btn-link {
-    color: $grayscale-20;
+  &:active {
+    color: $true-white;
+    box-shadow: none;
   }
 }
 
+// Secondary buttons
 .btn-default:not([disabled]) {
   &:hover {
     border-color: $btn-default-color;
@@ -37,13 +32,14 @@
   }
 
   &:active,
-  &:active:hover,
-  &:focus {
+  &:active:hover {
+    color: $true-white;
     border-color: rgba($btn-default-color, 0.80);
     background-color: rgba($btn-default-color, 0.80);
   }
 }
 
+// Primary buttons
 .btn-primary:not([disabled]) {
   &:hover {
     border-color: $btn-primary-color;
@@ -51,13 +47,14 @@
   }
 
   &:active,
-  &:active:hover,
-  &:focus {
+  &:active:hover {
+    color: $true-white;
     border-color: rgba($btn-primary-color, 0.80);
     background-color: rgba($btn-primary-color, 0.80);
   }
 }
 
+// Confirm buttons
 .btn-success:not([disabled]) {
   &:hover {
     border-color: $brand-success;
@@ -65,13 +62,14 @@
   }
 
   &:active,
-  &:active:hover,
-  &:focus {
+  &:active:hover {
+    color: $true-white;
     border-color: rgba($brand-success, 0.80);
     background-color: rgba($brand-success, 0.80);
   }
 }
 
+// Danger/Warning buttons
 .btn-danger:not([disabled]) {
   &:hover {
     border-color: $brand-danger;
@@ -79,22 +77,29 @@
   }
 
   &:active,
-  &:active:hover,
-  &:focus {
+  &:active:hover {
+    color: $true-white;
     border-color: rgba($brand-danger, 0.80);
     background-color: rgba($brand-danger, 0.80);
   }
 }
 
+// Link buttons
 .btn-link:not([disabled]) {
+  color: $grayscale-20;
+  background-color: transparent;
   &:hover {
     color: $grayscale-10;
     text-decoration: none;
   }
 
-  &:active,
-  &:active:hover,
   &:focus {
+    text-decoration: none;
+  }
+
+  &:active,
+  &:active:hover {
     color: $grayscale-20;
+    text-decoration: none;
   }
 }
