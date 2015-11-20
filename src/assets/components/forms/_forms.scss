@@ -83,7 +83,10 @@ textarea.form-control {
     right: 12px;
     margin-top: -8px;
     color: $primary-10;
+    font-family: $font-family-medium;
+    font-weight: $font-weight-medium;
     font-size: $font-size-small;
+    letter-spacing: 2px;
     text-transform: uppercase;
     cursor: pointer;
   }
