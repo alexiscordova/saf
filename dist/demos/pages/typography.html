@@ -14,9 +14,23 @@
   .row + .row {
     margin-top: 30px;
   }
+  
+  .fund-info:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  .fund-label {
+    font-size: 12px;
+    font-family: "New Rail Alphabet Medium";
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .fund-description {
+    font-size: 18px;
+  }
 
-  a {
-    display: block;
+  .card > .row {
+    margin-top: 20px;
   }
 </style>
 
@@ -38,15 +52,12 @@
   <div class="row">
     <div class="col-xs-12">
       <div class="card">
-        <h1>Heading 1 – Off White 32px</h1>
-        <h2>Heading 2 – White 20px</h2>
+        <h1>Heading 1 – Off White 28px</h1>
+        <h2>Heading 2 – White 18px</h2>
         <h3>Heading 3 – Medium 12px</h3>
-        <h4>Heading 4 – Light (Not Set) 20px</h4>
-        <h5>Heading 5 – Light (Not Set) 16px</h5>
-        <h6>Heading 6 – Light (Not Set) 14px</h6>
-        <p>Paragraph – Light (Default) 16px</p>
+        <p>Paragraph – Light (Default) 15px</p>
         <small>Small text – Light (Default) 12px</small>
-        <a href="#">Text link – Light (Default) 16px</a>
+        <a href="#">Text link – Light (Default) 15px</a>
       </div>
     </div>
   </div>
@@ -61,7 +72,6 @@
         <h2 class="text-info">Info/Neutral CTA</h2>
         <h2 class="text-secondary">Secondary Text</h2>
         <h2 class="text-tertiary">Tertiary Text</h2>
-        <h2 class="text-lowercase">Lowercase Text</h2>
         <h2 class="text-uppercase">Uppercase Text</h2>
       </div>
     </div>
@@ -70,15 +80,81 @@
   <div class="row">
     <div class="col-xs-12">
       <div class="card">
-        <h1>All headings have 20px bottom margin.</h1>
-        <p>Paragraphs have 60px bottom margin. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <small>Small text has no bottom margin, and should generally not be used on multiple lines of text. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small>
-        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small>
+        <h1>Funds</h1>
+        <p class="subhead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="card">
+        <h1>About the Firm</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="row" style="outline: 1px solid red;">
+          <div class="col-xs-4">
+            <div class="fund-info">
+              <p class="fund-label">Firm</p>
+              <p class="fund-description">Franklin Square Capital Partners</p>
+            </div>
+
+            <div class="fund-info">
+              <p class="fund-label">Website</p>
+              <p class="fund-description"><a href="#">franklinsquare.com</a></p>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="fund-info">
+              <p class="fund-label">Firm</p>
+              <p class="fund-description">Franklin Square Capital Partners</p>
+            </div>
+
+            <div class="fund-info">
+              <p class="fund-label">Website</p>
+              <p class="fund-description"><a href="#">franklinsquare.com</a></p>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="fund-info">
+              <p class="fund-label">Firm</p>
+              <p class="fund-description">Franklin Square Capital Partners</p>
+            </div>
+
+            <div class="fund-info">
+              <p class="fund-label">Website</p>
+              <p class="fund-description"><a href="#">franklinsquare.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
+
+<footer>
+  <div class="container center-block">
+    <div class="row">
+      <div class="col-xs-6 text-right">
+        <small>© 2015 Strategic Alternative Funds Group, LLC. All Rights Reserved</small>
+      </div>
+
+      <div class="col-xs-6 text-left">
+        <ul class="list-unstyled list-inline">
+          <li>
+            <a href="#" class="text-uppercase">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="text-uppercase">Terms of Use</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
 
 <script type="text/javascript" src="/assets/vendors/bootstrap/javascripts/bootstrap.min.js"></script>
 
