@@ -1,9 +1,14 @@
 // FORM FIELDS
 //-------------------
+%focus {
+  background-color: $grayscale-50;
+  border-color: transparent;
+  box-shadow: inset 0 0 1px 4px $grayscale-30;
+}
 
 // Basic input
 label {
-  margin-bottom: 2px;
+  margin-bottom: 7px;
   font-family: $font-family-medium;
   font-size: $font-size-small;
   font-weight: normal;
@@ -13,20 +18,23 @@ label {
 }
 
 .form-control {
-  height: 48px;
   font-family: $font-family-white;
-  font-size: 20px;
+  font-size: 18px;
   color: $grayscale-10;
   box-shadow: none;
   cursor: text;
   text-overflow: ellipsis;
+  transition: none;
   &::placeholder {
-    color: rgba($grayscale-10, 0.50);
     font-style: italic;
   }
 
   &[disabled] {
     padding-left: 0;
+  }
+
+  &:focus {
+    @extend %focus;
   }
 }
 
@@ -92,20 +100,28 @@ textarea.form-control {
   }
 }
 
-// Add-on left side
-.input-group-addon:first-child {
-  border-right: 1px solid rgba($grayscale-10, 0.20);
-}
+.input-group-addon {
+  color: rgba($grayscale-10, 0.20);
 
-// Add-on right side
-.input-group-addon:last-child {
-  border-left: 1px solid rgba($grayscale-10, 0.20);
+  // Add-on left side
+  &:first-child {
+    border-right: 1px solid rgba($grayscale-10, 0.20);
+  }
+
+  // Add-on right side
+  &:last-child {
+   border-left: 1px solid rgba($grayscale-10, 0.20);
+  }
+
 }
 
 // Error states
 .has-error .form-control {
   border-color: $brand-danger;
   background-color: rgba($brand-danger, 0.05);
+  &:focus {
+    @extend %focus;
+  }
 }
 
 .error-msg {
@@ -125,6 +141,6 @@ textarea.form-control {
   }
 
   .form-group + .form-group {
-    margin-left: 60px;
+    margin-left: 20px;
   }
 }

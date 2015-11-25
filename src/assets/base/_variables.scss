@@ -103,8 +103,15 @@ $btn-border-radius-small: $btn-border-radius-base;
 // Form Fields
 $input-bg: $grayscale-30;
 $input-bg-disabled: $true-white;
-$input-color: $grayscale-10; // fpo
+$input-color: $grayscale-10;
 $input-border: transparent;
 $input-border-radius: 0;
 
+$input-height-base: 44px;
+$input-height-small: 32px;
+
 $input-group-addon-bg: $grayscale-30;
+
+$form-group-margin-bottom: 25px;
+
+$input-color-placeholder: rgba($grayscale-10, 0.50);
