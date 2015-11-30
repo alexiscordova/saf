@@ -6,11 +6,14 @@
   padding: 0;
 
   & + & {
-    margin-top: 20px;
+    margin-top: 16px;
   }
 
-  &.disabled {
-    @include opacity (0.40);
+  &.disabled [type="checkbox"] + label {
+    color: rgba($grayscale-10, 0.20);
+    &:before {
+      border-color: rgba($grayscale-20, 0.50);
+    }
   }
 
   [type="checkbox"] {
@@ -21,7 +24,7 @@
   [type="checkbox"] + label {
     position: relative;
     z-index: 1;
-    padding-left: 30px;
+    padding-left: 28px;
     color: rgba($grayscale-10, 0.50);
     font-family: $font-family-light;
     font-weight: $font-weight-light;
@@ -34,7 +37,7 @@
       position: absolute;
       z-index: 1;
       top: 2px;
-      margin-left: -30px;
+      margin-left: -28px;
       width: 18px;
       height: 18px;
       border: 1px solid $grayscale-20;
