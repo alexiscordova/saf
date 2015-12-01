@@ -2,8 +2,8 @@
 
 // Base button
 .btn {
-  padding: 14px 22px 13px;
-  min-width: 190px;
+  padding: 14px 26px 13px;
+  min-width: 160px;
   font-family: $font-family-medium;
   font-size: $font-size-small;
   letter-spacing: 2px;
@@ -21,6 +21,19 @@
   &:active {
     color: $true-white;
     box-shadow: none;
+  }
+
+  & + & {
+    margin-left: 60px;
+  }
+}
+
+.btn-sm {
+  padding: 7px 17px 6px;
+  min-width: 110px;
+
+  & + & {
+    margin-left: 30px;
   }
 }
 
@@ -101,5 +114,28 @@
   &:active:hover {
     color: $grayscale-20;
     text-decoration: none;
+  }
+}
+
+// Disabled buttons
+.btn[disabled] {
+  @include opacity(0.50);
+}
+
+// INVERTED BUTTONS
+// Inverted Primary Button
+.btn-inverted.btn-primary {
+  color: $true-white;
+  background-color: $btn-primary-color;
+
+  &:not([disabled]):hover {
+    border-color: rgba($btn-primary-color, 0.60);
+    background-color: rgba($btn-primary-color, 0.60);
+  }
+
+  &:not([disabled]):active,
+  &:not([disabled]):active:hover {
+    border-color: rgba($btn-primary-color, 0.80);
+    background-color: rgba($btn-primary-color, 0.80);
   }
 }
