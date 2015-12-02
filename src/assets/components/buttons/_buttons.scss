@@ -129,13 +129,13 @@
   background-color: $btn-primary-color;
 
   &:not([disabled]):hover {
-    border-color: rgba($btn-primary-color, 0.60);
-    background-color: rgba($btn-primary-color, 0.60);
+    border-color: rgba($btn-primary-color, 0.80);
+    background-color: rgba($btn-primary-color, 0.80);
   }
 
   &:not([disabled]):active,
   &:not([disabled]):active:hover {
-    border-color: rgba($btn-primary-color, 0.80);
-    background-color: rgba($btn-primary-color, 0.80);
+    border-color: rgba($btn-primary-color, 0.60);
+    background-color: rgba($btn-primary-color, 0.60);
   }
 }
