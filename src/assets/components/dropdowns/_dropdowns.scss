@@ -2,9 +2,8 @@
 
 // Dropdown in navigation
 .nav-item.dropdown .dropdown-menu {
-  top: 72px;
-  right: 0;
-  left: auto;
+  top: 82px;
+  right: auto;
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -17,11 +16,13 @@
   > li > a {
     position: relative;
     z-index: 1;
-    padding: 12px 10px 12px 25px;
+    padding: 7px 10px 7px 25px;
     color: #9b9b9b;
+    font-size: 20px;
+    font-weight: $font-weight-off-white;
     &:hover {
       color: #fff;
-      background-color: rgba($grayscale-20, .16);
+      background-color: rgba($grayscale-20, .20);
     }
     &:hover:before {
       position: absolute;
