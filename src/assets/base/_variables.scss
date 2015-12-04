@@ -102,7 +102,7 @@ $btn-border-radius-small: $btn-border-radius-base;
 
 // Form Fields
 $input-bg: $grayscale-30;
-$input-bg-disabled: $true-white;
+$input-bg-disabled: rgba($grayscale-40, 0.40);
 $input-color: $grayscale-10;
 $input-border: transparent;
 $input-border-radius: 0;

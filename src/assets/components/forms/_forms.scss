@@ -19,6 +19,7 @@ label {
 
 .form-control {
   font-family: $font-family-white;
+  font-weight: $font-weight-white;
   font-size: 18px;
   color: $grayscale-10;
   box-shadow: none;
@@ -30,7 +31,7 @@ label {
   }
 
   &[disabled] {
-    padding-left: 0;
+    color: rgba($grayscale-10, 0.40);
   }
 
   &:focus {
