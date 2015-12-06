@@ -13,6 +13,16 @@
     position: relative;
     list-style: none;
 
+    &.active:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background-color: $primary-20;
+    }
+
     > a {
       display: block;
       position: relative;
@@ -24,16 +34,6 @@
 
       &:hover, &:focus {
         text-decoration: none;
-      }
-
-      &.selected:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        width: 4px;
-        background-color: $primary-20;
       }
     }
 

@@ -9,7 +9,7 @@ A list menu is a navigational component within a page. Menu items have a selecte
 ```html
 <div class="card">
   <ul class="selectable-list-menu">
-  <li><a class="selected" href="#">Overview</a></li>
+  <li class="active"><a href="#">Overview</a></li>
   <li><a href="#">Funds Terms & Fees</a></li>
   <li><a href="#">Performance</a></li>
   <li><a href="#">Documents</a></li>
