@@ -1,0 +1,23 @@
+// Simple Info
+
+.simple-info {
+  & + & {
+    margin-top: 20px;
+  }
+
+  .info-label {
+    color: rgba($grayscale-10, 0.50);
+    font-family: $font-family-medium;
+    font-weight: $font-weight-medium;
+    font-size: $font-size-small;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .info-description {
+    color: $grayscale-10;
+    font-family: $font-family-white;
+    font-weight: $font-weight-white;
+    font-size: 18px;
+  }
+}
