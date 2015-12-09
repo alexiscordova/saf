@@ -24,12 +24,6 @@
     @extend %table-title;
   }
 
-  td {
-    font-size: 18px;
-    font-family: $font-family-white;
-    font-weight: $font-weight-white;
-  }
-
   .table-title {
     @extend %table-title;
   }
