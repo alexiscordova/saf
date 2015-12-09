@@ -1,0 +1,41 @@
+// Tables
+%table-title {
+  color: rgba($grayscale-10, 0.50);
+  font-size: $font-size-small;
+  font-family: $font-family-medium;
+  font-weight: $font-weight-medium;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.table {
+  @extend .table-striped;
+
+  th:first-child,
+  td:first-child {
+    padding-left: 30px;
+  }
+
+  td:last-child {
+    padding-right: 30px;
+  }
+
+  th {
+    @extend %table-title;
+  }
+
+  td {
+    font-size: 18px;
+    font-family: $font-family-white;
+    font-weight: $font-weight-white;
+  }
+
+  .table-title {
+    @extend %table-title;
+  }
+
+  // Bootstrap override
+  > tbody > tr > td {
+    vertical-align: middle;
+  }
+}
