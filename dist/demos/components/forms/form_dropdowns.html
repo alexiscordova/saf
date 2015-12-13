@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Form dropdowns</title>
+  <link rel="stylesheet" href="//f.fontdeck.com/s/css/hTVw3hBVKroUSpZgLuO50Q6Vxqo/DOMAIN_NAME/61355.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/css/safx.min.css" type="text/css">
+  <script type="text/javascript" src="/assets/vendors/jquery/jquery-2.1.4.js"></script>
+</head>
+<body>
+
+<div class="card">
+  <form>
+  <div class="row">
+    <div class="col-xs-4">
+      <div class="form-dropdown">
+        <span>List</span>
+        <ul class="form-dropdown-menu">
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</form>
+
+<script type="text/javascript">
+  $('.form-dropdown,.form-dropdown a').click(function(e) {
+    $('.form-dropdown').toggleClass('open');
+    return false;
+  });
+</script>
+</div>
+
+<script type="text/javascript" src="/assets/vendors/bootstrap/javascripts/bootstrap.min.js"></script>
+
+</body>
+</html>

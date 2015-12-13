@@ -20,10 +20,6 @@
     padding-right: 30px;
   }
 
-  th {
-    @extend %table-title;
-  }
-
   .table-title {
     @extend %table-title;
   }

@@ -1,0 +1,107 @@
+// Icon font (hosted on S3 bucket)
+@font-face {
+  font-family: 'safx-icons';
+  src:url('//safx-font.s3.amazonaws.com/safx-icons.eot?f7lk0u');
+  src:url('//safx-font.s3.amazonaws.com/safx-icons.eot?f7lk0u#iefix') format('embedded-opentype'),
+    url('//safx-font.s3.amazonaws.com/safx-icons.ttf?f7lk0u') format('truetype'),
+    url('//safx-font.s3.amazonaws.com/safx-icons.woff?f7lk0u') format('woff'),
+    url('//safx-font.s3.amazonaws.com/safx-icons.svg?f7lk0u#safx-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+%safx-icon-font {
+    /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'safx-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="safx-"], [class*=" safx-"] {
+  @extend %safx-icon-font;
+}
+
+$icon-content-val-calendar:         "\e901";
+$icon-content-val-checkmark:        "\e903";
+$icon-content-val-clock:            "\e904";
+$icon-content-val-confirmation:     "\e905";
+$icon-content-val-delete:           "\e906";
+$icon-content-val-dir-arrow-next:   "\e900";
+$icon-content-val-dir-arrow-prev:   "\e907";
+$icon-content-val-dollar:           "\e908";
+$icon-content-val-download:         "\e909";
+$icon-content-val-dropdown-dwn:     "\e90a";
+$icon-content-val-dropdown-up:      "\e90b";
+$icon-content-val-edit:             "\e90c";
+$icon-content-val-error:            "\e90d";
+$icon-content-val-external-link:    "\e90e";
+$icon-content-val-help-o:           "\e90f";
+$icon-content-val-help:             "\e910";
+$icon-content-val-list-control:     "\e911";
+$icon-content-val-modal-close:      "\e912";
+$icon-content-val-next-page:        "\e913";
+$icon-content-val-percent:          "\e914";
+$icon-content-val-prev-page:        "\e915";
+$icon-content-val-search:           "\e916";
+$icon-content-val-status-indicator: "\e91b";
+$icon-content-val-upload:           "\e91c";
+$icon-content-val-watchlist:        "\e91d";
+$icon-content-val-zoom-in:          "\e91e";
+$icon-content-val-zoom-out:         "\e91f";
+
+.safx-calendar:before         { content: $icon-content-val-calendar; }
+.safx-checkmark:before        { content: $icon-content-val-checkmark; }
+.safx-clock:before            { content: $icon-content-val-clock; }
+.safx-confirmation:before     { content: $icon-content-val-confirmation; }
+.safx-delete:before           { content: $icon-content-val-delete; }
+.safx-dir-arrow-next:before   { content: $icon-content-val-dir-arrow-next; }
+.safx-dir-arrow-prev:before   { content: $icon-content-val-dir-arrow-prev; }
+.safx-dollar:before           { content: $icon-content-val-dollar; }
+.safx-download:before         { content: $icon-content-val-download; }
+.safx-dropdown-dwn:before     { content: $icon-content-val-dropdown-dwn; }
+.safx-dropdown-up:before      { content: $icon-content-val-dropdown-up; }
+.safx-edit:before             { content: $icon-content-val-edit; }
+.safx-error:before            { content: $icon-content-val-error; }
+.safx-external-link:before    { content: $icon-content-val-external-link; }
+.safx-help-o:before           { content: $icon-content-val-help-o; }
+.safx-help:before             { content: $icon-content-val-help; }
+.safx-list-control:before     { content: $icon-content-val-list-control; }
+.safx-modal-close:before      { content: $icon-content-val-modal-close; }
+.safx-next-page:before        { content: $icon-content-val-next-page; }
+.safx-percent:before          { content: $icon-content-val-percent; }
+.safx-prev-page:before        { content: $icon-content-val-prev-page; }
+.safx-search:before           { content: $icon-content-val-search; }
+.safx-status-indicator:before { content: $icon-content-val-status-indicator; }
+.safx-upload:before           { content: $icon-content-val-upload; }
+.safx-watchlist:before        { content: $icon-content-val-watchlist; }
+.safx-zoom-in:before          { content: $icon-content-val-zoom-in; }
+.safx-zoom-out:before         { content: $icon-content-val-zoom-out; }
+
+.safx-sort-down .path1:before {
+  content: "\e917";
+  color: rgb(170, 171, 187);
+}
+
+.safx-sort-down .path2:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: rgb(235, 238, 244);
+}
+
+.safx-sort-up .path1:before {
+  content: "\e919";
+  color: rgb(170, 171, 187);
+}
+.safx-sort-up .path2:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: rgb(235, 238, 244);
+}

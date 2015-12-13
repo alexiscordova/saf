@@ -1,0 +1,67 @@
+// Form dropdowns
+
+%form-dropdown-item-props {
+  display: block;
+  font-size: $form-drop-down-text-size;
+  padding-top: $form-dropdown-vertical-padding;
+  padding-bottom: $form-dropdown-vertical-padding;
+  padding-left: $form-dropdown-side-padding;
+  padding-right: $form-dropdown-side-padding;
+  cursor: pointer;
+  text-transform: none;
+}
+
+.form-dropdown {
+  @extend %form-dropdown-item-props;
+  position: relative;
+  background-color: $grayscale-30;
+
+  &:after {
+    @extend %safx-icon-font;
+    content: $icon-content-val-dropdown-dwn;
+    color: $primary-10;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  &.open,
+  &:active,
+  &:focus {
+    > .form-dropdown-menu {
+      display: block;
+    }
+
+    &:after {
+      content: $icon-content-val-dropdown-up;
+    }
+  }
+}
+
+.form-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  background-color: $true-white;
+  display: none;
+  box-shadow: 0px 8px 10px rgba($grayscale-10, 0.1);
+
+  > li {
+    list-style: none;
+    > a {
+      @extend %form-dropdown-item-props;
+      text-decoration: none;
+      color: rgba($grayscale-10, 0.5);
+
+      &:hover {
+        color: $grayscale-10;
+        background-color: $form-dropdown-bg-hover;
+      }
+    }
+  }
+}
