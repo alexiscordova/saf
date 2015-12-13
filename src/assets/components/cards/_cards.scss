@@ -2,7 +2,7 @@
 
 .card {
   position: relative;
-  padding: 30px;
+  padding: $card-padding;
   background-color: $true-white;
 
   &.pad {
@@ -26,4 +26,40 @@
   &.primary-10 {
     background-color: $primary-10;
   }
+}
+
+.card + .card {
+  margin-top: $card-spacing;
+}
+
+
+// Card sections
+.card-section {
+  padding-top: $card-section-padding-top;
+  padding-bottom: $card-section-padding-bottom;
+  margin-bottom: -$card-section-vertical-spacing;
+}
+
+/* should only be position relative because of the divider */
+.card-section + .card-section {
+  position: relative;
+}
+
+/* card section divider */
+.card-section + .card-section:before {
+  content: '';
+  display: block;
+  border: 1px solid #ebeef4;
+  position: absolute;
+  top: 0;
+  left: -$card-padding;
+  right: -$card-padding;
+}
+
+.card-section:last-of-type {
+  padding-bottom: 0;
+}
+
+.card-sub-section {
+  margin-bottom: $card-section-vertical-spacing;
 }

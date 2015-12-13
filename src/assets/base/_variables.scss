@@ -64,6 +64,11 @@ $font-size-base: 15px;
 $font-size-small: 12px;
 
 
+// Layout
+$min-width: 800px;
+$max-width: 1200px;
+
+
 // Navbar
 $navbar-default-bg: $grayscale-10;
 
@@ -100,6 +105,14 @@ $btn-border-radius-base: 100px;
 $btn-border-radius-small: $btn-border-radius-base;
 
 
+// Cards
+$card-spacing: 30px;
+$card-padding: 30px;
+$card-section-padding-top: 25px;
+$card-section-padding-bottom: 33px;
+$card-section-vertical-spacing: 25px;
+
+
 // Form Fields
 $input-bg: $grayscale-30;
 $input-bg-disabled: rgba($grayscale-30, 0.40);
@@ -115,6 +128,11 @@ $input-group-addon-bg: $grayscale-30;
 $form-group-margin-bottom: 25px;
 
 $input-color-placeholder: rgba($grayscale-10, 0.50);
+
+// List Menus
+$list-menu-divider: $grayscale-30;
+$list-menu-bg-hover: $grayscale-40;
+$list-menu-active-accent: $primary-20;
 
 // Tables
 $table-cell-padding: 16px;

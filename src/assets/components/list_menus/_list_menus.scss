@@ -13,6 +13,10 @@
     position: relative;
     list-style: none;
 
+    + li {
+      padding-top: 1px;
+    }
+
     &.active:after {
       content: '';
       position: absolute;
@@ -20,7 +24,7 @@
       top: 0;
       bottom: 0;
       width: 4px;
-      background-color: $primary-20;
+      background-color: $list-menu-active-accent;
     }
 
     > a {
@@ -34,6 +38,7 @@
 
       &:hover, &:focus {
         text-decoration: none;
+        background-color: $list-menu-bg-hover;
       }
     }
 
@@ -43,7 +48,7 @@
       top: 0;
       left: 30px;
       right: 30px;
-      border-top: 1px solid $grayscale-30;
+      border-top: 1px solid $list-menu-divider;
     }
   }
 }

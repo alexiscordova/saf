@@ -1,5 +1,6 @@
 ---
 title: "SAF - Funds | Overview"
+scroll_spy_info: ' data-spy="scroll" data-target="#nav-side-list" data-offset="64"'
 layout: default
 ---
 <style type="text/css">
@@ -14,115 +15,8 @@ layout: default
     margin-bottom: 28px;
   }
 
-  .card + .card {
-    margin-top: 30px;
-  }
-
-  /* Should these be part of the general layout styles? */
-  .card-section {
-    padding-top: 25px;
-    padding-bottom: 33px;
-  }
-
-  /* should only be position relative because of the divider */
-  .card-section + .card-section {
-    position: relative;
-  }
-
-  /* card section divider */
-  .card-section + .card-section:before {
-    content: '';
-    display: block;
-    border: 1px solid #ebeef4;
-    position: absolute;
-    top: 0;
-    left: -30px;
-    right: -30px;
-  }
-
-  .card-section:last-of-type {
-    padding-bottom: 0;
-  }
-
-  .card-sub-section + .card-sub-section {
-    margin-top: 25px;
-  }
-
   .navbar {
     margin-bottom: 0;
-  }
-
-  .pin-left {
-    display: block;
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .pin-right {
-    display: block;
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .actions {
-    height: 64px;
-    background-color: #ebeef4;
-  }
-
-  .affixed-content {
-    position: absolute;
-    top: 0;
-    left: 15px;
-    right: 15px;
-    z-index: 1;
-  }
-
-  .affixed-content.affix {
-    position: fixed;
-    left: 45px;
-    right: 45px;
-  }
-
-  .scrollable-content {
-    margin-top: 64px;
-    z-index: 0;
-  }
-
-  .center {
-    text-align: center;
-  }
-
-  .padded-top {
-    padding-top: 30px;
-  }
-
-  .collapsible {
-    position: relative;
-    max-height: 300px;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
-  }
-
-  .collapsible:after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    box-shadow: 0px 0px 90px 60px #fff;
-    transition: box-shadow 0.33s ease-in-out;
-  }
-
-  .collapsible.collapsed {
-    max-height: 999px;
-  }
-
-  .collapsible.collapsed:after {
-    box-shadow: 0px 0px 0px 0px #fff;
   }
 </style>
 
@@ -185,32 +79,34 @@ layout: default
   <!-- end main navigation -->
 </nav>
 
-<div role="main" class="container center-block" style="position: relative;" data-spy="scroll" data-target="#nav-side-list">
-  <div class="row affixed-content" data-spy="affix" data-offset-top="82">
-    <div class="actions col-xs-12">
-      <a href="#" role="button" class="btn btn-link pin-left">
-        <span class="icon"><</span>
-        Back to Funds
-      </a>
+<div role="main" class="container center-block">
+  <div class="affixed-content" data-spy="affix" data-offset-top="82">
+    <div class="row">
+      <div class="affixed-actions actions col-xs-12">
+        <a href="#" role="button" class="btn btn-link pin-left">
+          <span class="icon"><</span>
+          Back to Funds
+        </a>
 
-      <a href="#" role="button" class="btn btn-sm btn-primary btn-inverted pin-right">ADD TO QUEUE</a>
-    </div>
+        <a href="#" role="button" class="btn btn-sm btn-primary btn-inverted pin-right">ADD TO QUEUE</a>
+      </div>
 
-    <div class="col-xs-4">
-      <div class="card">
-        <div class="card-header primary-10">PRIVATE EQUITY FUND</div>
-        <img src="" alt="" class="advisor-image">
-        <h1 class="funds-header">FS One Equity Partners</h1>
+      <div class="fixed-left-side-nav col-xs-4">
+        <div class="card">
+          <div class="card-header primary-10">PRIVATE EQUITY FUND</div>
+          <img src="" alt="" class="advisor-image">
+          <h1 class="funds-header">FS One Equity Partners</h1>
 
-        <div id="nav-side-list">
-          <ul class="nav nav-tabs selectable-list-menu" role="tablist">
-            <li><a class="selected" href="#overview">Overview</a></li>
-            <li><a href="#funds-terms-and-fees">Funds Terms & Fees</a></li>
-            <li><a href="#performance">Performance</a></li>
-            <li><a href="#documents">Documents</a></li>
-            <li><a href="#about-the-firm">About the Firm</a></li>
-            <li><a href="#disclaimer">Disclaimer</a></li>
-          </ul>
+          <nav id="nav-side-list">
+            <ul class="nav selectable-list-menu">
+              <li class="active"><a href="#overview">Overview</a></li>
+              <li><a href="#funds-terms-and-fees">Funds Terms & Fees</a></li>
+              <li><a href="#performance">Performance</a></li>
+              <li><a href="#documents">Documents</a></li>
+              <li><a href="#about-the-firm">About the Firm</a></li>
+              <li><a href="#disclaimer">Disclaimer</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
@@ -279,66 +175,60 @@ layout: default
         <div id="funds-terms-and-fees" class="card">
           <h1>Fund Terms & Fees</h1>
 
-          <div class="card-section row">
-            <div class="col-xs-4">
-              <div class="card-sub-section">
-                <h3>SPONSOR COMMITMENT</h3>
-                <p>$50-100 million anticipated</p>
-              </div>
-
-              <div class="card-sub-section">
-                <h3>INVESTOR QUALIFICATION</h3>
-                <p>Accredited Investor</p>
-              </div>
-
-              <div class="card-sub-section">
-                <h3>LAUNCH DATE</h3>
-                <p>Fourth Quarter 2015</p>
-              </div>
-
-              <div class="card-sub-section">
-                <h3>NUMBER OF SHARES</h3>
-                <p>400 million</p>
-              </div>
+          <div class="card-section row clear-after-every-3">
+            <div class="card-sub-section col-xs-4">
+              <h3>SPONSOR COMMITMENT</h3>
+              <p>$50-100 million anticipated</p>
             </div>
 
-            <div class="col-xs-4">
-              <div class="card-sub-section">
-                <h3>FUND DOMICILE</h3>
-                <p>Delaware</p>
-              </div>
-
-              <div class="card-sub-section">
-                <h3>INVESTOR TAX STATUS</h3>
-                <p>Taxable</p>
-              </div>
-
-              <div class="card-sub-section">
-                <h3>CLOSE DATE</h3>
-                <p>Fourth Quarter 2015</p>
-              </div>
-
-              <div class="card-sub-section">
-                <h3>EXIT STRATEGY</h3>
-                <p>Share repurchase program</p>
-              </div>
+            <div class="card-sub-section col-xs-4">
+              <h3>INVESTOR QUALIFICATION</h3>
+              <p>Accredited Investor</p>
             </div>
 
-            <div class="col-xs-4">
-              <div class="card-sub-section">
-                <h3>ONSHORE/OFFSHORE</h3>
-                <p>Onshore</p>
-              </div>
+            <div class="card-sub-section col-xs-4">
+              <h3>LAUNCH DATE</h3>
+              <p>Fourth Quarter 2015</p>
+            </div>
 
-              <div class="card-sub-section">
-                <h3>INVESTOR TAX REPORTING</h3>
-                <p>None</p>
-              </div>
+            <div class="card-sub-section col-xs-4">
+              <h3>NUMBER OF SHARES</h3>
+              <p>400 million</p>
+            </div>
 
-              <div class="card-sub-section">
-                <h3>TOTAL CAPITAL RAISED</h3>
-                <p>$1.8 billion</p>
-              </div>
+            <div class="card-sub-section col-xs-4">
+              <h3>FUND DOMICILE</h3>
+              <p>Delaware</p>
+            </div>
+
+            <div class="card-sub-section col-xs-4">
+              <h3>INVESTOR TAX STATUS</h3>
+              <p>Taxable</p>
+            </div>
+
+            <div class="card-sub-section col-xs-4">
+              <h3>CLOSE DATE</h3>
+              <p>Fourth Quarter 2015</p>
+            </div>
+
+            <div class="card-sub-section col-xs-4">
+              <h3>EXIT STRATEGY</h3>
+              <p>Share repurchase program</p>
+            </div>
+
+            <div class="card-sub-section col-xs-4">
+              <h3>ONSHORE/OFFSHORE</h3>
+              <p>Onshore</p>
+            </div>
+
+            <div class="card-sub-section col-xs-4">
+              <h3>INVESTOR TAX REPORTING</h3>
+              <p>None</p>
+            </div>
+
+            <div class="card-sub-section col-xs-4">
+              <h3>TOTAL CAPITAL RAISED</h3>
+              <p>$1.8 billion</p>
             </div>
           </div>
         </div>
@@ -355,55 +245,62 @@ layout: default
           <h1>About the Firm</h1>
           <p>Franklin Square’s co-founders, led by Chairman and CEO Michael Forman, started the firm in 2007 with a simple mission: investors should have the same access to alternative investments as large institutional investors. Dissatisfied with the limited alternative investment options available to the investing public, the team spent two years analyzing vaeioua ways to deliver on their mission. This led to a significant breakthrough. Franklin Square took an underutilized investment vehicle called <a href="#">business development company (BDC)</a> and the <a href="#">Investment Company Act of 1940</a>. Franklin Square also selected GSO/Blackstone, one of the largest alternative asset managers in the world, to sub-advise its funds, putting a world-class institutional asset within reach of investors. The result was a new model for income-based investments that has transformed the alternatives landscape.</p>
 
-          <div class="card-section">
-            <div class="row card-sub-section">
-              <div class="col-xs-6">
-                <h3>FIRM</h3>
-                <p>Franklin Square Capital Partners</p>
-              </div>
-
-              <div class="col-xs-3">
-                <h3>HEADQUARTERS</h3>
-                <p>Philadelphia, PA</p>
-              </div>
-
-              <div class="col-xs-3">
-                <h3>EMPLOYEES</h3>
-                <p>300</p>
-              </div>
+          <div class="card-section row clear-after-every-3">
+            <div class="card-sub-section col-xs-6">
+              <h3>FIRM</h3>
+              <p>Franklin Square Capital Partners</p>
             </div>
 
-            <div class="row card-sub-section">
-              <div class="col-xs-6">
-                <h3>WEBSITE</h3>
-                <p><a href="#">franklinsquare.com</a></p>
-              </div>
+            <div class="card-sub-section col-xs-3">
+              <h3>HEADQUARTERS</h3>
+              <p>Philadelphia, PA</p>
+            </div>
 
-              <div class="col-xs-3">
-                <h3>FIRM ALUM</h3>
-                <p>15.4 billion</p>
-              </div>
+            <div class="card-sub-section col-xs-3">
+              <h3>EMPLOYEES</h3>
+              <p>300</p>
+            </div>
 
-              <div class="col-xs-3">
-                <h3>AVAILABLE FUNDS</h3>
-                <p><a href="#">FSIC III OEP</a></p>
-              </div>
+            <div class="card-sub-section col-xs-6">
+              <h3>WEBSITE</h3>
+              <p><a href="#">franklinsquare.com</a></p>
+            </div>
+
+            <div class="card-sub-section col-xs-3">
+              <h3>FIRM ALUM</h3>
+              <p>15.4 billion</p>
+            </div>
+
+            <div class="card-sub-section col-xs-3">
+              <h3>AVAILABLE FUNDS</h3>
+              <p><a href="#">FSIC III OEP</a></p>
             </div>
           </div>
         </div>
 
         <div id="disclaimer" class="card">
           <h1>Disclaimer</h1>
-          <div class="collapsible">
+          <div class="collapsible" id="disclaimer-content">
             <p>Securities offered through FS2 Capital Partners, LLC (member FINRA/SIPC). FS2 Capital Partners, LLC is Franklin Square’s affiliated broker dealer that serves as the wholesaling distributor of FS OneEquity’s common shares (the Shares) representing limited partnership interests of FS OneEquity. The information contained herein is not complete and may be amended or changed. Investors should read and carefully consider all information found in the applicable FS OneEquity private placement memorandum before investing because it contains important information about FS OneEquity, including the risks and expenses related to an investment in FS OneEquity. FS OneEquity is not an investment fund and intends to employ a business model whose success depends upon FS OneEquity’s ability to operate, manage and grow businesses which it acquires.</p>
 
             <p>This is neither an offer to sell nor a solicitation of an offer to buy the securities described herein. An offering may be made only by a private placement memorandum and only to properly qualified accredited investors in compliance with relevant federal and state securities laws.</p>
 
             <p>The Shares have not been and are not expected to be registered under the Securities Act of 1933, as amended (the Securities Act), or any state or other securities laws or the laws of any non-U.S. jurisdiction. The Shares will be offered and sold in the United States under the exemption provided by Section 4(a)(2) of the Securities Act and Rule 506 of Regulation D promulgated thereunder (to the extent applicable) and other exemptions of similar import in the laws of the states and other jurisdictions where the offering will be made. There is no obligation on the part of any person to register the Shares under the Securities Act. Franklin Square Capital Partners is not affiliated with Franklin Resources/Franklin Templeton Investments or the Franklin Funds.<br>© 2015 FS OneEquity Partners Co. L.P.<br>XX-XXXXX-XXXX<br>XXXX 9/3/15</p>
           </div>
-          <div class="center padded-top"><a href="#" role="button" class="btn btn-primary">LOAD MORE</a></div>
+          <div class="center-button"><a href="#disclaimer-content" role="button" class="btn btn-primary">SHOW MORE</a></div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  $('a[href="#disclaimer-content').click(function(e) {
+    $('#disclaimer-content').toggleClass('collapsed')
+    if ($(this).text() == 'SHOW MORE') {
+      $(this).text('SHOW LESS');
+    } else {
+      $(this).text('SHOW MORE');
+    }
+  });
+</script>

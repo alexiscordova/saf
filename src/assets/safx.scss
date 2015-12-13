@@ -12,6 +12,7 @@
 
 // Layouts
 @import 'layout/layout';
+@import 'layout/fixed-right-nav';
 
 // Components
 @import 'components/cards/cards';
@@ -20,6 +21,7 @@
 @import 'components/buttons/buttons';
 @import 'components/forms/forms';
 @import 'components/forms/checkboxes';
+@import 'components/collapsible-content/collapsible-content';
 @import 'components/forms/radios';
 @import 'components/tables/tables';
 @import 'components/list_menus/list_menus';
