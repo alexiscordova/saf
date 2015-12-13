@@ -7,14 +7,16 @@
   padding-bottom: $form-dropdown-vertical-padding;
   padding-left: $form-dropdown-side-padding;
   padding-right: $form-dropdown-side-padding;
-  cursor: pointer;
-  text-transform: none;
+  text-decoration: none;
+  // text-transform: none;
 }
 
-.form-dropdown {
-  @extend %form-dropdown-item-props;
-  position: relative;
-  background-color: $grayscale-30;
+.form.dropdown {
+  > a {
+    @extend %form-dropdown-item-props;
+    color: $grayscale-10;
+    background-color: $grayscale-30;
+  }
 
   &:after {
     @extend %safx-icon-font;
@@ -23,39 +25,28 @@
     position: absolute;
     right: 20px;
     top: 50%;
+    pointer-events: none;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
 
-  &.open,
-  &:active,
-  &:focus {
-    > .form-dropdown-menu {
-      display: block;
-    }
-
-    &:after {
-      content: $icon-content-val-dropdown-up;
-    }
+  &.open:after {
+    content: $icon-content-val-dropdown-up;
   }
 }
 
-.form-dropdown-menu {
-  position: absolute;
-  top: 100%;
+.form.dropdown > .dropdown-menu {
+  // Bootstrap overrides
   left: 0;
-  right: 0;
-  padding: 0;
+  width: 100%;
   margin: 0;
-  background-color: $true-white;
-  display: none;
-  box-shadow: 0px 8px 10px rgba($grayscale-10, 0.1);
+  padding: 0;
+  border: none;
+  border-radius: 0;
 
   > li {
-    list-style: none;
     > a {
       @extend %form-dropdown-item-props;
-      text-decoration: none;
       color: rgba($grayscale-10, 0.5);
 
       &:hover {

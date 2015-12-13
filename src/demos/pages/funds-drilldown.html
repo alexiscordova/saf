@@ -388,9 +388,10 @@ layout: default
                 <th></th>
                 <th>
                   <label class="table-title">VINTAGE 1</label>
-                  <div class="form-dropdown">
-                    <span>FA</span>
-                    <ul class="form-dropdown-menu">
+                  <div class="form dropdown">
+                    <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                FA</a>
+                    <ul class="form dropdown-menu" aria-labelledby="dLabel">
                       <li><a href="#">Share Class I</a></li>
                       <li><a href="#">Share Class FI</a></li>
                       <li><a href="#">Share Class A</a></li>
@@ -400,9 +401,10 @@ layout: default
                 </th>
                 <th>
                   <label class="table-title">VINTAGE 2</label>
-                  <div class="form-dropdown">
-                    <span>FA</span>
-                    <ul class="form-dropdown-menu">
+                  <div class="form dropdown">
+                    <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                FA</a>
+                    <ul class="form dropdown-menu" aria-labelledby="dLabel">
                       <li><a href="#">Share Class I</a></li>
                       <li><a href="#">Share Class FI</a></li>
                       <li><a href="#">Share Class A</a></li>
@@ -572,18 +574,5 @@ layout: default
     } else {
       $(this).text('SHOW MORE');
     }
-  });
-
-  $('.form-dropdown').click(function(e) {
-    $(this).toggleClass('open');
-  });
-
-  $('.form-dropdown a').click(function(e) {
-    $(this)
-      .parent()
-      .parent()
-      .parent()
-      .removeClass('open');
-    return false;
   });
 </script>

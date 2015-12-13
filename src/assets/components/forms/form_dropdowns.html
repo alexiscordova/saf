@@ -6,9 +6,10 @@ layout: with-card
 <form>
   <div class="row">
     <div class="col-xs-4">
-      <div class="form-dropdown">
-        <span>List</span>
-        <ul class="form-dropdown-menu">
+      <div class="form dropdown">
+        <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+    Dropdown</a>
+        <ul class="form dropdown-menu" aria-labelledby="dLabel">
           <li><a href="#">Item 1</a></li>
           <li><a href="#">Item 2</a></li>
           <li><a href="#">Item 3</a></li>
@@ -17,10 +18,3 @@ layout: with-card
     </div>
   </div>
 </form>
-
-<script type="text/javascript">
-  $('.form-dropdown,.form-dropdown a').click(function(e) {
-    $('.form-dropdown').toggleClass('open');
-    return false;
-  });
-</script>
