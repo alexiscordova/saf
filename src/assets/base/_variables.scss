@@ -139,3 +139,13 @@ $table-cell-padding: 16px;
 $table-bg-accent: $grayscale-40;
 $table-bg-hover: $grayscale-50;
 $table-border-color: transparent;
+
+// Tabs
+$tab-text-unselected-color: rgba($grayscale-10, 0.5);
+$tab-active-text-color: $grayscale-10;
+$tab-active-bg-color: $grayscale-40;
+$tab-inactive-hover-bg-color: rgba($grayscale-40, 0.5);
+$tab-content-padding: 30px;
+$tab-section-divider: $grayscale-30;
+$tab-section-vertical-spacing: 25px;
+$tab-sub-section-vertical-spacing: 25px;

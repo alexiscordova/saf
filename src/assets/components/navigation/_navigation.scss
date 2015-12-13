@@ -60,6 +60,7 @@ $logo-height: 33px;
       color: $navbar-default-link-hover-color;
       text-decoration: none;
       transition: color 0.15s linear; // fpo
+      background-color: transparent;
     }
   }
 }
@@ -115,6 +116,7 @@ $logo-height: 33px;
       color: $navbar-default-link-hover-color;
       text-decoration: none;
       transition: color 0.15s linear;
+      background-color: transparent;
     }
   }
 
