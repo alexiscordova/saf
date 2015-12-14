@@ -1,0 +1,72 @@
+// Toggles
+
+.toggle {
+  position: relative;
+  display: block;
+  height: 32px;
+  border-radius: 16px;
+  background-color: $grayscale-30;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    border-radius: 16px;
+    background-color: $primary-10;
+    transition:
+      left 0.33s cubic-bezier(.694, .0482, .335, 1),
+      background-color 0.33s cubic-bezier(.694, .0482, .335, 1);
+  }
+
+  &.two-tone {
+    &:before {
+      background-color: $primary-40;
+    }
+
+    &.toggled:before {
+      background-color: $primary-50;
+    }
+  }
+
+  &.toggled {
+    > .option:first-of-type {
+      color: $grayscale-20;
+    }
+
+    > .option:last-of-type {
+      color: $true-white;
+    }
+
+    &:before {
+      left: 50%;
+    }
+  }
+
+  > .option {
+    position: absolute;
+    top: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: $font-size-small;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.33s cubic-bezier(.694, .0482, .335, 1);
+  }
+
+  > .option:first-of-type {
+    color: $true-white;
+    left: 25%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+  > .option:last-of-type {
+    color: $grayscale-20;
+    left: 75%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
