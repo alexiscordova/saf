@@ -1,0 +1,59 @@
+// Fixed-position left-side nav
+
+.actions {
+    height: 64px;
+    background-color: #ebeef4;
+  }
+
+.pin-left {
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.pin-right {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.affixed-content {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  right: 15px;
+  z-index: 1;
+
+  > .row {
+    position: relative;
+  }
+}
+
+.affixed-content.affix {
+  position: fixed;
+  left: 30px;
+  right: 30px;
+  min-width: $min-width;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.fixed-left-side-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.scrollable-content {
+  margin-top: 64px;
+  z-index: 0;
+}

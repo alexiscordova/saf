@@ -60,8 +60,14 @@ $font-size-h1: 28px;
 $font-size-h2: 18px;
 $font-size-h3: 12px;
 
+$font-size-medium: 18px;
 $font-size-base: 15px;
 $font-size-small: 12px;
+
+
+// Layout
+$min-width: 800px;
+$max-width: 1200px;
 
 
 // Navbar
@@ -100,6 +106,14 @@ $btn-border-radius-base: 100px;
 $btn-border-radius-small: $btn-border-radius-base;
 
 
+// Cards
+$card-spacing: 30px;
+$card-padding: 30px;
+$card-section-padding-top: 25px;
+$card-section-padding-bottom: 33px;
+$card-section-vertical-spacing: 25px;
+
+
 // Form Fields
 $input-bg: $grayscale-30;
 $input-bg-disabled: rgba($grayscale-30, 0.40);
@@ -116,8 +130,38 @@ $form-group-margin-bottom: 25px;
 
 $input-color-placeholder: rgba($grayscale-10, 0.50);
 
+
+// Checkboxes
+$checkbox-size: 18px;
+
+
+// Form Dropdown Menus
+$form-drop-down-text-size: $font-size-base;
+$form-dropdown-vertical-padding: 13px;
+$form-dropdown-side-padding: 12px;
+$form-dropdown-bg-hover: $grayscale-50;
+$form-dropdown-box-shadow-color: rgba($grayscale-10, 0.5);
+
+
+// List Menus
+$list-menu-divider: $grayscale-30;
+$list-menu-bg-hover: $grayscale-40;
+$list-menu-active-accent: $primary-20;
+
+
 // Tables
 $table-cell-padding: 16px;
 $table-bg-accent: $grayscale-40;
 $table-bg-hover: $grayscale-50;
 $table-border-color: transparent;
+
+
+// Tabs
+$tab-text-unselected-color: rgba($grayscale-10, 0.5);
+$tab-active-text-color: $grayscale-10;
+$tab-active-bg-color: $grayscale-40;
+$tab-inactive-hover-bg-color: rgba($grayscale-40, 0.5);
+$tab-content-padding: 30px;
+$tab-section-divider: $grayscale-30;
+$tab-section-vertical-spacing: 25px;
+$tab-sub-section-vertical-spacing: 25px;

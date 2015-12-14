@@ -1,0 +1,58 @@
+// Form dropdowns
+
+%form-dropdown-item-props {
+  display: block;
+  font-size: $form-drop-down-text-size;
+  padding-top: $form-dropdown-vertical-padding;
+  padding-bottom: $form-dropdown-vertical-padding;
+  padding-left: $form-dropdown-side-padding;
+  padding-right: $form-dropdown-side-padding;
+  text-decoration: none;
+  // text-transform: none;
+}
+
+.form.dropdown {
+  > a {
+    @extend %form-dropdown-item-props;
+    color: $grayscale-10;
+    background-color: $grayscale-30;
+  }
+
+  &:after {
+    @extend %safx-icon-font;
+    content: $icon-content-val-dropdown-dwn;
+    color: $primary-10;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    pointer-events: none;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  &.open:after {
+    content: $icon-content-val-dropdown-up;
+  }
+}
+
+.form.dropdown > .dropdown-menu {
+  // Bootstrap overrides
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+
+  > li {
+    > a {
+      @extend %form-dropdown-item-props;
+      color: rgba($grayscale-10, 0.5);
+
+      &:hover {
+        color: $grayscale-10;
+        background-color: $form-dropdown-bg-hover;
+      }
+    }
+  }
+}

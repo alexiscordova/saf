@@ -1,0 +1,56 @@
+// Tabs
+
+// Overrides for Bootstrap
+.nav-tabs {
+  border-color: $tab-active-bg-color;
+
+  > li {
+    > a {
+      font-weight: $font-weight-medium;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-radius: 0;
+      margin-right: 0;
+      color: $tab-text-unselected-color;
+
+      &:hover {
+        color: $grayscale-10;
+        background-color: $tab-inactive-hover-bg-color;
+        border-bottom-color: $tab-active-bg-color;
+        border-top-color: $tab-inactive-hover-bg-color;
+        border-left-color: $tab-inactive-hover-bg-color;
+        border-right-color: $tab-inactive-hover-bg-color;
+      }
+    }
+   }
+
+   > li.active {
+      > a,
+      > a:focus,
+      > a:hover {
+        color: $tab-active-text-color;
+        border-color: $tab-active-bg-color;
+        background-color: $tab-active-bg-color;
+      }
+   }
+}
+
+.tab-content {
+  background-color: $grayscale-40;
+  padding: $tab-content-padding;
+}
+
+// Layout styles for tab content
+.tab-section {
+  margin-bottom: -$tab-sub-section-vertical-spacing;
+}
+
+.tab-section + .tab-section {
+  margin-top: $tab-section-vertical-spacing;
+  padding-top: $tab-section-vertical-spacing;
+  border-top: 1px solid $tab-section-divider;
+}
+
+.tab-sub-section {
+  margin-bottom: $tab-sub-section-vertical-spacing;
+}

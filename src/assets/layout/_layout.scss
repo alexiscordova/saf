@@ -16,7 +16,23 @@
 
 // Non-responsive Bootstrap overrides
 .container {
-  min-width: 800px;
-  max-width: 1200px;
+  position: relative;
+  min-width: $min-width;
+  max-width: $max-width;
   width: 100%;
+}
+
+// Isolated button that should be centered
+.center-button {
+  padding-top: 30px;
+  text-align: center;
+}
+
+$evenly-spaced-columns: 1 2 3 4 6;
+
+// Make fluid layout that does proper column wrapping
+@each $col in $evenly-spaced-columns {
+  .row.clear-after-every-#{$col} > [class*="col-"]:nth-child(#{$col}n + 1) {
+    clear: both;
+  }
 }
