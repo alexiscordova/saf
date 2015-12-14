@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>zoom_in</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Guidelines" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSArtboardGroup" transform="translate(-663.000000, -460.000000)">
+            <g sketch:type="MSLayerGroup" transform="translate(60.000000, 60.000000)" id="zoom-controls-+-1-+-+-+-Oval-79-Copy-2-+-ic_add_black_18px-(1)-copy-+-+-+-Oval-79-Copy-3-+-ic_remove_black_18px-copy-Copy">
+                <g transform="translate(603.000000, 400.000000)" sketch:type="MSShapeGroup">
+                    <g id="zoom_in">
+                        <circle id="Oval-79" stroke="#2959CC" fill="#FFFFFF" cx="14" cy="14" r="14"></circle>
+                        <path d="M20,14.8571429 L14.8571429,14.8571429 L14.8571429,20 L13.1428571,20 L13.1428571,14.8571429 L8,14.8571429 L8,13.1428571 L13.1428571,13.1428571 L13.1428571,8 L14.8571429,8 L14.8571429,13.1428571 L20,13.1428571 L20,14.8571429 L20,14.8571429 Z" id="Shape" fill="#2959CC"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

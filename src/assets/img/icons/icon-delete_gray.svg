@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>delete_gray</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Guidelines" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSArtboardGroup" transform="translate(-663.000000, -351.000000)">
+            <g sketch:type="MSLayerGroup" transform="translate(60.000000, 60.000000)" id="delete">
+                <g transform="translate(603.000000, 290.000000)" sketch:type="MSShapeGroup">
+                    <g id="delete_gray" transform="translate(0.000000, 1.000000)">
+                        <circle id="Oval-25-Copy-3" fill="#C3C4CF" cx="14" cy="14" r="14"></circle>
+                        <path d="M10.0625,18.59375 C10.0625,19.315625 10.653125,19.90625 11.375,19.90625 L16.625,19.90625 C17.346875,19.90625 17.9375,19.315625 17.9375,18.59375 L17.9375,10.71875 L10.0625,10.71875 L10.0625,18.59375 L10.0625,18.59375 Z M18.59375,8.75 L16.296875,8.75 L15.640625,8.09375 L12.359375,8.09375 L11.703125,8.75 L9.40625,8.75 L9.40625,10.0625 L18.59375,10.0625 L18.59375,8.75 L18.59375,8.75 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
