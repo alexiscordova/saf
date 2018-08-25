@@ -1,9 +1,10 @@
-SAFX
-===
+# SAFX
+
 Cards
 Last Updated: December 12, 2015
 
-##Collapsible content
+## Collapsible content
+
 Collapsible content is content is content that, at first glance, is too long to read. This allows the user to toggle the visibility of the full content of the container.
 
 ```html

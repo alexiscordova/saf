@@ -1,9 +1,10 @@
-SAFX
-===
-Footer  
+# SAFX
+
+Footer
 Last Updated: November 17, 2015
 
-##Footer
+## Footer
+
 The footer contains two items: a copyright notice, and a list of links. Programmatically, the only items that need to be populated are the current year (as part of the copyright notice) and the URL destinations for both the privacy policy and the terms of use.
 
 ```html
