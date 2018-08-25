@@ -1,12 +1,14 @@
-SAFX
-===
-Form Elements  
+# SAFX
+
+Form Elements
 Last Updated: November 16, 2015
 
 ## Form Elements
+
 Form Elements—text inputs, checkboxes, and radio buttons—make up a good portion of the SAF user interface. All form fields are wrapped inside of a `<form>` tag.
 
-###Text Inputs
+### Text Inputs
+
 There are quite a few variations of text inputs, with a mixture of options, states, and text. The markup below is the minimum required HTML for the type of field; however, `<label>`s are optional. When using a `<label>`, the `for` attribute must be used on the `<label>` and linked with the `<input>` by giving it the same value for `id`. Placeholder text can be applied by providing a text value for the `placeholder` attribute.
 
 **Note**: Many of these options can be combined to create complex fields. For example, a standard text field can have a trigger action and descriptive text. With certain options, the markup is required to change slightly. This should be reflected in the final template.
@@ -23,7 +25,7 @@ There are quite a few variations of text inputs, with a mixture of options, stat
     </div>
   </div>
 </form>
-````
+```
 
 **Text**
 
@@ -133,12 +135,14 @@ Multi-line/Textarea are used when the user needs to input multiple lines of text
 
 Descriptive text is used to describe the type of input required, or offer assistance to the user in the form of a link. While `<small>` is used in this example, any HTML element can be used (but is primarily `<small>` or `<a>`).
 
-##Checkboxes
+## Checkboxes
+
 The custom checkboxes have four states: passive, hover, checked, and disabled. Clicking on either the checkbox or the label will activate the checkbox. As with form fields, checkboxes should be grouped in `<form>` and proper usage of the `for` and `id` attributes apply.
 
 Disabled states do not get hover states, but can be checked by default by using the `checked` attribute on the `<input>`.
 
 **Passive**
+
 ```html
 <form>
   <div class="checkbox">
@@ -149,6 +153,7 @@ Disabled states do not get hover states, but can be checked by default by using 
 ```
 
 **Checked**
+
 ```html
 <form>
   <div class="checkbox">
@@ -159,6 +164,7 @@ Disabled states do not get hover states, but can be checked by default by using 
 ```
 
 **Disabled**
+
 ```html
 <form>
   <div class="checkbox disabled">
@@ -170,11 +176,12 @@ Disabled states do not get hover states, but can be checked by default by using 
 
 Disabled states require `.disabled` on the `.checkbox`, as well as the `disabled` attribute on the `<input>`. This gives the checkbox and the label the proper styling.
 
+## Radio Buttons
 
-##Radio Buttons
 Radio buttons are similar to checkboxes, except they represent as single choice (versus a collection of choices). While the same checkbox rules apply, radio buttons also require the `name` attribute, which refers to the grouping of radio buttons.
 
 **Passive**
+
 ```html
 <form>
   <div class="radio">
@@ -185,6 +192,7 @@ Radio buttons are similar to checkboxes, except they represent as single choice 
 ```
 
 **Selected**
+
 ```html
 <form>
   <div class="radio">
@@ -195,6 +203,7 @@ Radio buttons are similar to checkboxes, except they represent as single choice 
 ```
 
 **Disabled**
+
 ```html
 <form>
   <div class="radio disabled">

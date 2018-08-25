@@ -1,18 +1,22 @@
-SAFX
-===
-Base  
+# SAFX
+
+Base
 Last Updated: November 22, 2015
 
-##Base
+## Base
+
 The `/base` directory contains all the base styles and systems, including color, typography, and variables—both custom and Bootstrap overrides.
 
-###Color
+### Color
+
 TBD
 
-###Typography
+### Typography
+
 The typographic system contains three headings, paragraphs, and small text, along with a variety of utility classes. The type system leverages Bootstrap where possible.
 
-####Headings
+#### Headings
+
 Heading 1 (`<h1>`) and Heading 2 (`<h2>`) have a bottom margin of `20px`, while Heading 3 (`<h3>`) has a bottom margin of `10px`. Headings 4-6 are not defined.
 
 To use a subheading (e.g., introduction text that follows a Heading 1), attach the `.subhead` class to a `<p>`.
@@ -26,7 +30,8 @@ To use a subheading (e.g., introduction text that follows a Heading 1), attach t
 <p class="subhead">Subheading</p>
 ```
 
-####Body Copy
+#### Body Copy
+
 Paragraphs (`<p>`) have a bottom margin of `10px`, except when it's the last item in a block; in that instance, the bottom margin is `0px`.
 
 ```html
@@ -38,15 +43,16 @@ Paragraphs (`<p>`) have a bottom margin of `10px`, except when it's the last ite
 
 Text links take the styling of the element the link is being applied to, but have a color of `$primary-10`. The hover state for a text link adds an underline, but does not change in color.
 
-####Utility Classes
+#### Utility Classes
+
 While all the [utility classes from Bootstrap](http://getbootstrap.com/css/#type) apply, the following are most-commonly used within this system:
 
-* `.text-success`, which maps to Success/Positive
-* `.text-danger`, which maps to Danger/Warning
-* `.text-info`, which maps to Info/Neutral
-* `.text-uppercase`, which transforms any text into all caps
+- `.text-success`, which maps to Success/Positive
+- `.text-danger`, which maps to Danger/Warning
+- `.text-info`, which maps to Info/Neutral
+- `.text-uppercase`, which transforms any text into all caps
 
 In addition to these utility classes, the following two classes are also available:
 
-* `.text-secondary`, which maps to Secondary text
-* `.text-tertiary`, which maps to Tertiary text
+- `.text-secondary`, which maps to Secondary text
+- `.text-tertiary`, which maps to Tertiary text

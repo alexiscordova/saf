@@ -1,9 +1,10 @@
-SAFX
-===
+# SAFX
+
 List Menus
 Last Updated: November 16, 2015
 
-##List Menus
+## List Menus
+
 A list menu is a navigational component within a page. Menu items have a selected and unselected state and interacting with an item in the list will change content on the page. A list menu will always be within the context of a card. For the navigation, the links should be nested within `a` tags.
 
 ```html

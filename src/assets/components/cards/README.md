@@ -1,9 +1,10 @@
-SAFX
-===
-Cards  
+# SAFX
+
+Cards
 Last Updated: November 17, 2015
 
-##Cards
+## Cards
+
 Content cards are styled containers that hold additional pieces of content, including grid layouts.
 
 ```html

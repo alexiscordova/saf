@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>download</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Guidelines" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSArtboardGroup" transform="translate(-663.000000, -134.000000)">
+            <g sketch:type="MSLayerGroup" transform="translate(60.000000, 60.000000)" id="download/upload-+-Oval-25-Copy-2-+-ic_mode_edit_black_24px-copy-2-+-Oval-25-Copy-3-+-ic_delete_black_24px-copy-2-Copy-Copy-Copy">
+                <g transform="translate(603.000000, 74.000000)" sketch:type="MSShapeGroup">
+                    <g id="download">
+                        <circle id="Oval-25-Copy-2" fill="#C3C4CF" cx="14" cy="14" r="14"></circle>
+                        <path d="M20.125,11.375 L16.625,11.375 L16.625,6.125 L11.375,6.125 L11.375,11.375 L7.875,11.375 L14,17.5 L20.125,11.375 L20.125,11.375 Z M7.875,19.25 L7.875,21 L20.125,21 L20.125,19.25 L7.875,19.25 L7.875,19.25 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

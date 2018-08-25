@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>confirmation</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Guidelines" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSArtboardGroup" transform="translate(-663.000000, -188.000000)">
+            <g sketch:type="MSLayerGroup" transform="translate(60.000000, 60.000000)" id="confirmation/error-+-Rectangle-127-Copy-5-+-ic_file_upload_black_24px-Copy-Copy-Copy-Copy-Copy-Copy-+-exclamation">
+                <g transform="translate(603.000000, 128.000000)" sketch:type="MSShapeGroup">
+                    <g id="confirmation">
+                        <rect id="Rectangle-127-Copy-5" fill="#28E5A3" x="0" y="0" width="28" height="28" rx="40"></rect>
+                        <path d="M11.375,17.64875 L7.72625,14 L6.48375,15.23375 L11.375,20.125 L21.875,9.625 L20.64125,8.39125 L11.375,17.64875 Z" id="Shape" fill="#F5F7FD"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

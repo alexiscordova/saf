@@ -1,9 +1,10 @@
-SAFX
-===
-User Login  
+# SAFX
+
+User Login
 Last Updated: November 17, 2015
 
-#User Login
+## User Login
+
 The user login component is a molecule consisting of typography, form elements, and a button.
 
 All text, including the placeholder text on the email text input, can be changed to fit the use case (e.g., a user logout screen).

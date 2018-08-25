@@ -1,0 +1,30 @@
+// Modals
+
+.modal {
+  background-color: rgba($grayscale-10, 0.40);
+  .close {
+    position: absolute;
+    z-index: 2;
+    top: 24px;
+    right: 24px;
+  }
+  .modal-dialog {
+    position: relative;
+    z-index: 2;
+    width: 840px;
+  }
+  .modal-content {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .modal-body {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .modal-footer {
+    text-align: center;
+    .btn + .btn {
+      margin-left: 60px;
+    }
+  }
+}
